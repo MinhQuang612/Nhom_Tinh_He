@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Center(child: Column(children: [],)),
+      home: Center(
+          child: Column(
+        children: [],
+      )),
     );
   }
 }
-
