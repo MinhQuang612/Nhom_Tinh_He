@@ -1,6 +1,8 @@
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/dang_ky.dart';
+import 'package:nhom_tinh_he/layout/dang_nhap.dart';
 
 class first_screen extends StatefulWidget {
   const first_screen({super.key});
@@ -47,13 +49,13 @@ class _first_screenState extends State<first_screen> {
                    minWidth: 250,
                    
                   onPressed: (){
-                    // Navigator.push(context,
-                    // MaterialPageRoute(
+                    Navigator.push(context,
+                    MaterialPageRoute(
                       
-                    //   builder: (context)=>
-                    //   const signin()
-                    //   ),
-                    //   );
+                      builder: (context)=>
+                      const signin()
+                      ),
+                      );
                   },
                     shape: RoundedRectangleBorder(
                       
@@ -95,13 +97,13 @@ class _first_screenState extends State<first_screen> {
                    elevation: 5,
                    minWidth: 250,
                   onPressed: (){
-                    // Navigator.push(context,
-                    // MaterialPageRoute(
+                    Navigator.push(context,
+                    MaterialPageRoute(
                       
-                    //   builder: (context)=>
-                    //   const signup()
-                    //   ),
-                    //   );
+                      builder: (context)=>
+                      const signup()
+                      ),
+                      );
                   },
                     shape: RoundedRectangleBorder(
                        borderRadius: new BorderRadius.circular(30.0),

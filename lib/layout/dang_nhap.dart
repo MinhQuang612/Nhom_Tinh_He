@@ -2,6 +2,7 @@
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/dang_ky.dart';
 import '../layout/man_hinh_dau_tien.dart';
 
 
@@ -226,12 +227,12 @@ class _signinState extends State<signin> {
                               Text('Chưa có tài khoản?'),
                               TextButton(
                                 onPressed: (){
-                                //   Navigator.push(context,
-                                // MaterialPageRoute(
-                                //   builder: (context)=>
-                                //   const signup()
-                                //   ),
-                                //   );
+                                  Navigator.push(context,
+                                MaterialPageRoute(
+                                  builder: (context)=>
+                                  const signup()
+                                  ),
+                                  );
                                 },
                                 child: const Text('ĐĂNG KÝ NGAY', style: TextStyle(color: Colors.blue)),
                         ),
