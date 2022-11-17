@@ -1,4 +1,4 @@
-import 'package:do_an_tinhhe/layout/items.dart';
+import 'items.dart';
 import 'package:flutter/material.dart';
 import '../components/menu.dart';
 
@@ -401,6 +401,425 @@ class _challengeState extends State<challenge> {
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 16',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(bottom: 15),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height: 40,
+                          width: 250,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.blue.shade400,
+                              side: BorderSide(width: 1),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            },
+                            child: const Text(
+                              'Đấu ngẫu nhiên',
+                              style:
+                                  TextStyle(fontSize: 20, color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Material(
+              color: Colors.grey.shade700,
+              child: ListView(
+                children: [
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/6.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Hà Minh Trung',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/7.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Hà Minh Trung',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/8.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Hà Minh Trung',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/9.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Hà Minh Trung',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/10.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Lương Tấn Hoàng',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/11.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Hà Minh Thành',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/13.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Hà Minh Quý',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
+                                      style: TextStyle(color: Colors.white))
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        new Spacer(),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15)),
+                            ),
+                            onPressed: (() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const items()),
+                              );
+                            }),
+                            child: Text('Thách đấu')),
+                      ],
+                    ),
+                  ),
+                  new Divider(),
+                  Container(
+                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2,
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 22,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  radius: 20.0,
+                                  backgroundImage: AssetImage('assets/12.jpg'),
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Text(
+                                    '   Hà Minh Trung',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Text('Level 1',
                                       style: TextStyle(color: Colors.white))
                                 ],
                               ),
