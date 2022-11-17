@@ -883,6 +883,50 @@ class _challengeState extends State<challenge> {
                 ],
               ),
             ),
+            Material(
+              child: Container(
+                color: Colors.grey.shade700,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Cần kết nối với Facebook để có thể chơi với bạn bè',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    SizedBox(
+                      width: 220,
+                      height: 40,
+                      child: ElevatedButton.icon(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          primary: Colors.black,
+                        ),
+                        icon: Icon(
+                          Icons.facebook,
+                          size: 30,
+                          color: Colors.blue,
+                        ), //icon data for elevated button
+                        label: Text(
+                          'Facebook',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.blue),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

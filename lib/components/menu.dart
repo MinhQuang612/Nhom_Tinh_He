@@ -1,10 +1,10 @@
-import 'package:do_an_tinhhe/layout/challenge.dart';
-import 'package:do_an_tinhhe/layout/items.dart';
+import '../layout/tim_doi_thu.dart';
+import '../layout/items.dart';
 import 'package:flutter/material.dart';
 import '../layout/home.dart';
-import '../layout/setting.dart';
+import '../layout/tuy_chinh.dart';
 
-import '../layout/information.dart';
+import '../layout/thong_tin.dart';
 import '../main.dart';
 
 class Menu extends StatefulWidget {
@@ -233,7 +233,7 @@ class _MenuState extends State<Menu> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      const MyHomePage()),
+                                                      const home()),
                                             );
                                           },
                                           child: const Text('Có'),

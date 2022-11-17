@@ -1,9 +1,9 @@
 import 'dart:html';
-import 'package:do_an_tinhhe/layout/solo.dart';
+//import 'package:do_an_tinhhe/layout/solo.dart';
 import 'package:flutter/material.dart';
 import '../components/menu.dart';
-import '../layout/challenge.dart';
-import '../layout/vs.dart';
+import '../layout/tim_doi_thu.dart';
+import '../layout/man_hinh_cho_doi_khang.dart';
 import '../layout/items.dart';
 
 class home extends StatefulWidget {
