@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/man_hinh_dau_tien.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Center(
-          child: Column(
-        children: [],
-      )),
+      home: first_screen(),
     );
   }
 }
