@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/dang_ky.dart';
+import 'package:nhom_tinh_he/layout/quen_mk.dart';
 import '../layout/man_hinh_dau_tien.dart';
 
 
@@ -146,12 +147,12 @@ class _signinState extends State<signin> {
                             ),
                             TextButton(
                               onPressed: () {
-                                  //     Navigator.push(context,
-                                  // MaterialPageRoute(   
-                                  //   builder: (context)=>
-                                  //   const forget_pass()
-                                  //   ),
-                                  //   );
+                                      Navigator.push(context,
+                                  MaterialPageRoute(   
+                                    builder: (context)=>
+                                    const forget_pass()
+                                    ),
+                                    );
                                 },
                               child: Text('Quên mật khẩu?',
                                style: TextStyle(fontSize: 15, color: Colors.red))),

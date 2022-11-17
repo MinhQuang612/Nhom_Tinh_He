@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/dang_nhap.dart';
+import 'package:nhom_tinh_he/layout/doi_mk.dart';
 
 
 class forget_pass extends StatefulWidget {
@@ -108,11 +109,11 @@ class _forget_passState extends State<forget_pass> {
                             elevation: 5,
                             minWidth: 180,
                             onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => const newpass()),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const newpass()),
+                        );
                       },
                             shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
