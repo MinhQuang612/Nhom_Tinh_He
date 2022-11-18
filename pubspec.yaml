@@ -70,7 +70,6 @@ flutter:
     - assets/coins.png
     - assets/avt.jpg
     - assets/avt1.jpg
-    - assets/sword.png
     - assets/background_challenge.jpg
     - assets/2.png
     - assets/3.png
@@ -85,9 +84,16 @@ flutter:
     - assets/12.jpg
     - assets/13.jpg
     - assets/14.jpg
-    - assets/user.jpg
     - assets/trophy.png
     - assets/banner.png
+    - assets/vang.png
+    - assets/bac.png
+    - assets/dong.png
+    - assets/cup_vang.png
+    - assets/map2.gif
+    - assets/map3.gif
+    - assets/loading-gif.gif
+    - assets/giphy.gif
     - assets/nen_trang_ca_nhan.png
 
   #   - images/a_dot_ham.jpeg
