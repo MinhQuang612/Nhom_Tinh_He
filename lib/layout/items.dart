@@ -98,7 +98,7 @@ class _itemsState extends State<items> {
                           size: 25,
                           color: Colors.white,
                         ),
-                        tooltip: 'add',
+                        tooltip: 'Mua lượt',
                         onPressed: () {},
                       ),
                     ]),

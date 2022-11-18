@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/dang_nhap.dart';
 import 'package:nhom_tinh_he/layout/quen_mk.dart';
-
 
 class newpass extends StatefulWidget {
   const newpass({Key? key}) : super(key: key);
@@ -82,66 +80,67 @@ class _newpassState extends State<newpass> {
                           height: 15.0,
                         ),
                         TextField(
-                         autofocus: true,
-                              obscureText:hide_pass,  
-                              style: TextStyle(color: Colors.black),
-                              decoration: InputDecoration(
-                                 suffixIcon: IconButton(
+                          autofocus: true,
+                          obscureText: hide_pass,
+                          style: TextStyle(color: Colors.black),
+                          decoration: InputDecoration(
+                              suffixIcon: IconButton(
                                   icon: Icon(
-                                      hide_pass ? Icons.visibility : Icons.visibility_off, color: Colors.black),
+                                      hide_pass
+                                          ? Icons.visibility
+                                          : Icons.visibility_off,
+                                      color: Colors.black),
                                   onPressed: () {
                                     setState(() {
                                       hide_pass = !hide_pass;
                                     });
                                   }),
-                                enabledBorder:OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                  borderSide: const BorderSide(
-                                    width: 1,
-                                    color: Colors.black),
-                                    ),
-        
-                                     focusedBorder: new OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                      borderSide:  BorderSide(color: Colors.black ),
-                                      ),
-                                    border:OutlineInputBorder(),
-                                    prefixIcon: Icon(Icons.lock, color: Colors.black), 
-                                    hintText:'Nhập mật khẩu mới',
-                                    hintStyle:TextStyle(color: Colors.grey)),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20.0),
+                                borderSide: const BorderSide(
+                                    width: 1, color: Colors.black),
                               ),
-                              SizedBox(
+                              focusedBorder: new OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20.0),
+                                borderSide: BorderSide(color: Colors.black),
+                              ),
+                              border: OutlineInputBorder(),
+                              prefixIcon: Icon(Icons.lock, color: Colors.black),
+                              hintText: 'Nhập mật khẩu mới',
+                              hintStyle: TextStyle(color: Colors.grey)),
+                        ),
+                        SizedBox(
                           height: 15.0,
                         ),
-                              TextField(
-                              obscureText:_hide_pass,  
-                              style: TextStyle(color: Colors.black),
-                              decoration: InputDecoration(
-                                 suffixIcon: IconButton(
+                        TextField(
+                          obscureText: _hide_pass,
+                          style: TextStyle(color: Colors.black),
+                          decoration: InputDecoration(
+                              suffixIcon: IconButton(
                                   icon: Icon(
-                                      _hide_pass ? Icons.visibility : Icons.visibility_off, color: Colors.black),
+                                      _hide_pass
+                                          ? Icons.visibility
+                                          : Icons.visibility_off,
+                                      color: Colors.black),
                                   onPressed: () {
                                     setState(() {
                                       _hide_pass = !_hide_pass;
                                     });
                                   }),
-                                enabledBorder:OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                  borderSide: const BorderSide(
-                                    width: 1,
-                                    color: Colors.black),
-                                    ),
-        
-                                     focusedBorder: new OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                      borderSide:  BorderSide(color: Colors.black ),
-                                      ),
-                                    border:OutlineInputBorder(),
-                                    prefixIcon: Icon(Icons.lock, color: Colors.black), 
-                                    hintText:'Xác nhận mật khẩu',
-                                    hintStyle:TextStyle(color: Colors.grey)),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20.0),
+                                borderSide: const BorderSide(
+                                    width: 1, color: Colors.black),
                               ),
-                        
+                              focusedBorder: new OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20.0),
+                                borderSide: BorderSide(color: Colors.black),
+                              ),
+                              border: OutlineInputBorder(),
+                              prefixIcon: Icon(Icons.lock, color: Colors.black),
+                              hintText: 'Xác nhận mật khẩu',
+                              hintStyle: TextStyle(color: Colors.grey)),
+                        ),
                         SizedBox(
                           height: 15.0,
                         ),
@@ -149,13 +148,13 @@ class _newpassState extends State<newpass> {
                             height: 45.0,
                             elevation: 5,
                             minWidth: 180,
-                           onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const signin()),
-                        );
-                      },
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const signin()),
+                              );
+                            },
                             shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),
