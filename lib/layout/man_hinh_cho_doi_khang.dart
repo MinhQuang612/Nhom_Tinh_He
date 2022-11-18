@@ -12,13 +12,13 @@ class vs extends StatefulWidget {
 
 class _vsState extends State<vs> {
   // void initState() {   
-  //   Timer(Duration(seconds: 3), () {
+  //   Timer(Duration(seconds: 5), () {
   //     Navigator.pushReplacement(
   //         context, MaterialPageRoute(builder: (context) => play_challenge()));
   //   });
   //   super.initState();
   // }
-  Widget build(BuildContext context) {
+   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         bottom: false,
@@ -27,7 +27,7 @@ class _vsState extends State<vs> {
             image: DecorationImage(
                 image: AssetImage('assets/bg.jpg'), fit: BoxFit.cover),
           ),
-          padding: EdgeInsets.only(left: 20, right: 20, top: 100, bottom: 100),
+          padding: EdgeInsets.only(left: 20, right: 20, top: 70, bottom: 70),
           height: double.infinity,
           width: double.infinity,
           child: SingleChildScrollView(
@@ -38,15 +38,14 @@ class _vsState extends State<vs> {
                 Row(children: [
                   Column(
                     children: [
-                       CircleAvatar(
-                          radius: 50,
-                          backgroundColor: Colors.white,
-                          child:
                       CircleAvatar(
-                        backgroundImage: AssetImage('assets/avt1.jpg'),
-                        radius: 45.0,
+                        radius: 50,
+                        backgroundColor: Colors.white,
+                        child: CircleAvatar(
+                          backgroundImage: AssetImage('assets/avt1.jpg'),
+                          radius: 45.0,
+                        ),
                       ),
-                       ),
                     ],
                   ),
                   Column(children: [
@@ -70,16 +69,16 @@ class _vsState extends State<vs> {
                     ]),
                   ]),
                 ]),
-                SizedBox(height: 115),
+                SizedBox(height: 100),
                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Image(
-                    image: AssetImage('assets/sword.png'),
-                    height: 100,
-                    width: 100,
+                    image: AssetImage('assets/giphy.gif'),
+                    height: 130,
+                    width: 150,
                     fit: BoxFit.fill,
                   )
                 ]),
-                SizedBox(height: 115),
+                SizedBox(height: 100),
                 Row(children: [
                   new Spacer(),
                   Column(children: [
@@ -115,6 +114,16 @@ class _vsState extends State<vs> {
                     ],
                   ),
                 ]),
+                SizedBox(height: 40,),
+                Row( mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Image(image: AssetImage('assets/loading-gif.gif'),
+                    fit: BoxFit.fill,
+                    height: 50,
+                    width:50
+                    ),
+                  ],
+                )
               ],
             ),
           ),
@@ -123,3 +132,4 @@ class _vsState extends State<vs> {
     );
   }
 }
+
