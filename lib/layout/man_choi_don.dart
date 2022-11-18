@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/vat_pham_choi_don.dart';
 
 class map extends StatefulWidget {
   const map({super.key});
@@ -30,11 +31,10 @@ class _mapState extends State<map> {
                   children: [
                     MaterialButton(
                       onPressed: () {
-                        //  Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => const home()),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const home()),
+                        );
                       },
                       color: Colors.grey,
                       textColor: Colors.white,
@@ -61,11 +61,11 @@ class _mapState extends State<map> {
                               elevation: 5,
                               minWidth: 80.0,
                               onPressed: () {
-                        //          Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => const items_solo()),
-                        // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const items_solo()),
+                                );
                               },
                               shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(10.0),
@@ -87,13 +87,13 @@ class _mapState extends State<map> {
                               height: 80.0,
                               elevation: 5,
                               minWidth: 80.0,
-                              onPressed: () { 
-                        //         Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => const items_solo()),
-                        // );
-                        },
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const items_solo()),
+                                );
+                              },
                               shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(10.0),
                                 side: BorderSide(
@@ -105,8 +105,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '2',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -125,8 +125,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '3',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                         ],
                       ),
@@ -170,8 +170,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '4',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -190,8 +190,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '5',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -210,10 +210,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '6',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -227,7 +226,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -238,7 +238,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -278,8 +279,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '7',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -298,8 +299,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '8',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -318,10 +319,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '9',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -335,7 +335,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -346,7 +347,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -386,8 +388,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '10',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -406,8 +408,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '11',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -426,10 +428,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '12',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -443,7 +444,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -454,7 +456,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -494,8 +497,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '13',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -514,8 +517,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '14',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -534,10 +537,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '15',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -551,7 +553,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -562,7 +565,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -602,8 +606,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '16',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -622,8 +626,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '17',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -642,10 +646,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '18',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -659,7 +662,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -670,7 +674,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -710,8 +715,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '19',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -730,8 +735,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '20',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -750,10 +755,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '21',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -767,7 +771,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -778,7 +783,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -818,8 +824,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '22',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -838,8 +844,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '23',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -858,10 +864,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '24',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -875,7 +880,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -886,7 +892,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -926,8 +933,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '25',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -946,8 +953,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '26',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -966,10 +973,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '27',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -983,7 +989,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -994,7 +1001,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),
@@ -1034,8 +1042,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '28',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -1054,8 +1062,8 @@ class _mapState extends State<map> {
                               child: Text(
                                 '29',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
                           new Spacer(),
                           MaterialButton(
@@ -1074,10 +1082,9 @@ class _mapState extends State<map> {
                               child: Text(
                                 '30',
                                 textAlign: TextAlign.center,
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               )),
-                              
                         ],
                       ),
                       Row(
@@ -1091,7 +1098,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 160),
@@ -1102,7 +1110,8 @@ class _mapState extends State<map> {
                             ),
                           ),
                         ],
-                      ),Row(
+                      ),
+                      Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 50, left: 306),

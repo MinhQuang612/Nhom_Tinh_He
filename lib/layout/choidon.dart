@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/ketqua_choi_don.dart';
 
 class choidon extends StatefulWidget {
   const choidon({Key? key}) : super(key: key);
@@ -197,12 +199,12 @@ class _choidonState extends State<choidon> {
                                       ),
                                       CupertinoDialogAction(
                                         onPressed: () {
-                                          // Navigator.push(
-                                          //   context,
-                                          //   MaterialPageRoute(
-                                          //       builder: (context) =>
-                                          //           const home()),
-                                          // );
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const home()),
+                                          );
                                         },
                                         child: const Text(
                                           'Có',
@@ -271,7 +273,13 @@ class _choidonState extends State<choidon> {
                       height: 60,
                       elevation: 5,
                       minWidth: 440,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const result_solo()),
+                        );
+                      },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
                           width: 2,

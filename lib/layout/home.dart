@@ -1,10 +1,12 @@
 import 'dart:html';
 //import 'package:do_an_tinhhe/layout/solo.dart';
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/man_choi_don.dart';
 import '../components/menu.dart';
 import '../layout/tim_doi_thu.dart';
 import '../layout/man_hinh_cho_doi_khang.dart';
 import '../layout/items.dart';
+import '../layout/vat_pham_choi_don.dart';
 
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
@@ -56,7 +58,7 @@ class _homeState extends State<home> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const items()),
+                                builder: (context) => const map()),
                           );
                         },
                         style: ElevatedButton.styleFrom(

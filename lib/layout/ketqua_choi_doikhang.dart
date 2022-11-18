@@ -1,7 +1,8 @@
-
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/man_choi_don.dart';
+import 'package:nhom_tinh_he/layout/tim_doi_thu.dart';
 
 class result_challenge extends StatefulWidget {
   const result_challenge({Key? key}) : super(key: key);
@@ -122,7 +123,9 @@ class _result_challengeState extends State<result_challenge> {
                   ],
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 decoration: new BoxDecoration(
                   boxShadow: [
@@ -332,7 +335,13 @@ class _result_challengeState extends State<result_challenge> {
                         height: 45.0,
                         elevation: 5,
                         minWidth: 180,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const map()),
+                          );
+                        },
                         shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(30.0),
                         ),
@@ -348,13 +357,11 @@ class _result_challengeState extends State<result_challenge> {
                         elevation: 5,
                         minWidth: 180,
                         onPressed: () {
-                    //       Navigator.push(context,
-                    // MaterialPageRoute(
-                      
-                    //   builder: (context)=>
-                    //   const challenge()
-                    //   ),
-                    //   );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const challenge()),
+                          );
                         },
                         shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(30.0),

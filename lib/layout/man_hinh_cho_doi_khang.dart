@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:nhom_tinh_he/layout/choi_doi_khang.dart';
 
 class vs extends StatefulWidget {
   const vs({Key? key}) : super(key: key);
@@ -11,14 +11,15 @@ class vs extends StatefulWidget {
 }
 
 class _vsState extends State<vs> {
-  // void initState() {   
-  //   Timer(Duration(seconds: 5), () {
-  //     Navigator.pushReplacement(
-  //         context, MaterialPageRoute(builder: (context) => play_challenge()));
-  //   });
-  //   super.initState();
-  // }
-   Widget build(BuildContext context) {
+  void initState() {
+    Timer(Duration(seconds: 5), () {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => play_challenge()));
+    });
+    super.initState();
+  }
+
+  Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         bottom: false,
@@ -114,14 +115,17 @@ class _vsState extends State<vs> {
                     ],
                   ),
                 ]),
-                SizedBox(height: 40,),
-                Row( mainAxisAlignment: MainAxisAlignment.end,
+                SizedBox(
+                  height: 40,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Image(image: AssetImage('assets/loading-gif.gif'),
-                    fit: BoxFit.fill,
-                    height: 50,
-                    width:50
-                    ),
+                    Image(
+                        image: AssetImage('assets/loading-gif.gif'),
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50),
                   ],
                 )
               ],
@@ -132,4 +136,3 @@ class _vsState extends State<vs> {
     );
   }
 }
-

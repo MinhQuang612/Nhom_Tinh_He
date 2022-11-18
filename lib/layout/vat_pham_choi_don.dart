@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/choidon.dart';
+import 'package:nhom_tinh_he/layout/man_choi_don.dart';
 
 class items_solo extends StatefulWidget {
   const items_solo({super.key});
@@ -11,7 +12,7 @@ class items_solo extends StatefulWidget {
 class _items_soloState extends State<items_solo> {
   @override
   Widget build(BuildContext context) {
-     return Scaffold(
+    return Scaffold(
       body: SafeArea(
         bottom: false,
         child: Container(
@@ -33,10 +34,10 @@ class _items_soloState extends State<items_solo> {
                     ),
                     tooltip: 'Back',
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => const map()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const map()),
+                      );
                     },
                   ),
                   SizedBox(width: 150),
@@ -44,9 +45,9 @@ class _items_soloState extends State<items_solo> {
                       style: TextStyle(fontSize: 22, color: Colors.white)),
                 ]),
               ),
-             
               Container(
-                padding: EdgeInsets.only(left: 10,right: 10,top: 15,bottom: 100),
+                padding:
+                    EdgeInsets.only(left: 10, right: 10, top: 15, bottom: 100),
                 color: Colors.grey.shade900,
                 child: Column(
                   children: [
@@ -54,13 +55,14 @@ class _items_soloState extends State<items_solo> {
                       CircleAvatar(
                         radius: 25,
                         backgroundColor: Colors.white,
-                      child: CircleAvatar(
-                        radius: 24,
-                        backgroundColor: Colors.blue.shade700,
-                        child: Text('50:50',
-                            style:
-                                TextStyle(color: Colors.black,)),
-                      ),
+                        child: CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.blue.shade700,
+                          child: Text('50:50',
+                              style: TextStyle(
+                                color: Colors.black,
+                              )),
+                        ),
                       ),
                       SizedBox(
                         width: 50,
@@ -79,10 +81,12 @@ class _items_soloState extends State<items_solo> {
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 24,
-                      child:CircleAvatar(
-                        backgroundImage: AssetImage('assets/2.png'),
-                        radius: 18,
-                      ),),),
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage('assets/2.png'),
+                            radius: 18,
+                          ),
+                        ),
+                      ),
                       SizedBox(
                         width: 50,
                       ),
@@ -92,30 +96,32 @@ class _items_soloState extends State<items_solo> {
                       ),
                       new Spacer(),
                       IconButton(
-                    icon: Icon(
-                      Icons.add_circle,
-                      size: 25,
-                      color: Colors.white,
-                    ),
-                    tooltip: 'add',
-                    onPressed: () {},
-                  ),
+                        icon: Icon(
+                          Icons.add_circle,
+                          size: 25,
+                          color: Colors.white,
+                        ),
+                        tooltip: 'add',
+                        onPressed: () {},
+                      ),
                     ]),
                     SizedBox(
                       height: 20,
                     ),
                     Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-                     CircleAvatar(
+                      CircleAvatar(
                         radius: 25,
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 24,
-                      child: CircleAvatar(
-                        backgroundImage: AssetImage(
-                          'assets/3.png',
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage(
+                              'assets/3.png',
+                            ),
+                            radius: 18,
+                          ),
                         ),
-                        radius: 18,
-                      ),),),
+                      ),
                       SizedBox(
                         width: 50,
                       ),
@@ -133,10 +139,12 @@ class _items_soloState extends State<items_solo> {
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 24,
-                      child:CircleAvatar(
-                        backgroundImage: AssetImage('assets/4.png'),
-                        radius: 18,
-                      ),),),
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage('assets/4.png'),
+                            radius: 18,
+                          ),
+                        ),
+                      ),
                       SizedBox(
                         width: 50,
                       ),
@@ -149,15 +157,17 @@ class _items_soloState extends State<items_solo> {
                       height: 20,
                     ),
                     Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-                     CircleAvatar(
+                      CircleAvatar(
                         radius: 25,
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 24,
-                      child:CircleAvatar(
-                        backgroundImage: AssetImage('assets/5.png'),
-                        radius: 18,
-                      ),),),
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage('assets/5.png'),
+                            radius: 18,
+                          ),
+                        ),
+                      ),
                       SizedBox(
                         width: 50,
                       ),
@@ -174,27 +184,26 @@ class _items_soloState extends State<items_solo> {
                 padding: EdgeInsets.only(bottom: 20),
                 child: Column(
                   children: [
-                   MaterialButton(
-                                height: 60.0,
-                                elevation: 5,
-                                minWidth: 500,
-                                onPressed: () {
-                                  //     Navigator.push(context,
-                                  // MaterialPageRoute(   
-                                  //   builder: (context)=>
-                                  //   const solo()
-                                  //   ),
-                                  //   );
-                                },
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: new BorderRadius.circular(30.0),
-                                ),
-                                color: Colors.blue.shade800,
-                               
-                                child: Text('Bắt đầu chơi',
-                                    textAlign: TextAlign.center, style: TextStyle(
-                                      color: Colors.white,
-                                       fontSize:25 ),)),
+                    MaterialButton(
+                        height: 60.0,
+                        elevation: 5,
+                        minWidth: 500,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const choidon()),
+                          );
+                        },
+                        shape: RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(30.0),
+                        ),
+                        color: Colors.blue.shade800,
+                        child: Text(
+                          'Bắt đầu chơi',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        )),
                   ],
                 ),
               ),

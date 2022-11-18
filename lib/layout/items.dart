@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/man_hinh_cho_doi_khang.dart';
 // import '../layout/vs.dart';
 // import '../layout/home.dart';
 
@@ -34,10 +36,10 @@ class _itemsState extends State<items> {
                     ),
                     tooltip: 'Back',
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => const home()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const home()),
+                      );
                     },
                   ),
                   SizedBox(width: 150),
@@ -177,12 +179,10 @@ class _itemsState extends State<items> {
                         elevation: 5,
                         minWidth: 500,
                         onPressed: () {
-                          //     Navigator.push(context,
-                          // MaterialPageRoute(
-                          //   builder: (context)=>
-                          //   const vs()
-                          //   ),
-                          //   );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const vs()),
+                          );
                         },
                         shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(30.0),

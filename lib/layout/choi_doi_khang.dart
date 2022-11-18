@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/ketqua_choi_doikhang.dart';
 
 class play_challenge extends StatefulWidget {
   const play_challenge({Key? key}) : super(key: key);
@@ -202,12 +204,12 @@ class _play_challengeState extends State<play_challenge> {
                                       ),
                                       CupertinoDialogAction(
                                         onPressed: () {
-                                          // Navigator.push(
-                                          //   context,
-                                          //   MaterialPageRoute(
-                                          //       builder: (context) =>
-                                          //           const home()),
-                                          // );
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const home()),
+                                          );
                                         },
                                         child: const Text(
                                           'Có',
@@ -332,13 +334,11 @@ class _play_challengeState extends State<play_challenge> {
                       elevation: 5,
                       minWidth: 440,
                       onPressed: () {
-                        //     Navigator.push(context,
-                        // MaterialPageRoute(
-
-                        //   builder: (context)=>
-                        //   const result_challenge()
-                        //   ),
-                        //   );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const result_challenge()),
+                        );
                       },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
