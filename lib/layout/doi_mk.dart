@@ -42,11 +42,11 @@ class _newpassState extends State<newpass> {
                         shape: const CircleBorder(),
                       ),
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const forget_pass()),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (context) => const forget_pass()),
+                        // );
                       },
                       child: const Text('X'),
                     ),
@@ -71,7 +71,7 @@ class _newpassState extends State<newpass> {
                     // decoration: myBoxDecoration(), Tạo khung cho form
                     child: Column(
                       children: <Widget>[
-                        Text('TẠO MẬT KHẨU MỚI',
+                        Text('Đổi mật khẩu',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 30,
