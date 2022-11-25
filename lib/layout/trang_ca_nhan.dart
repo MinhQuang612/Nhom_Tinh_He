@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nhom_tinh_he/layout/chinhsuathongtin.dart';
+import 'package:nhom_tinh_he/layout/chinh_sua_trang_ca_nhan.dart';
 import 'package:nhom_tinh_he/layout/home.dart';
 import 'package:nhom_tinh_he/layout/thanh_tich.dart';
 
@@ -49,13 +49,11 @@ class _pro_fileState extends State<pro_file> {
                             new Spacer(),
                             MaterialButton(
                               onPressed: () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //       builder: (context) =>
-                                //           const chinhsuathongtin()
-                                //          ),
-                                // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const edit()),
+                                );
                               },
                               child: CircleAvatar(
                                 radius: 22,

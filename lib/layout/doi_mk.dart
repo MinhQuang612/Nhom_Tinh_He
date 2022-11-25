@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/chinh_sua_trang_ca_nhan.dart';
 import 'package:nhom_tinh_he/layout/dang_nhap.dart';
 import 'package:nhom_tinh_he/layout/quen_mk.dart';
 
@@ -42,11 +43,10 @@ class _newpassState extends State<newpass> {
                         shape: const CircleBorder(),
                       ),
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => const forget_pass()),
-                        // );
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) => const edit())));
                       },
                       child: const Text('X'),
                     ),
