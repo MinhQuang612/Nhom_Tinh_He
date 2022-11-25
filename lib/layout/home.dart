@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/man_choi_don.dart';
 import 'package:nhom_tinh_he/layout/thong_bao.dart';
+import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 import '../components/menu.dart';
 import '../layout/tim_doi_thu.dart';
 import '../layout/man_hinh_cho_doi_khang.dart';
@@ -126,12 +127,21 @@ class _homeState extends State<home> {
                     Padding(padding: EdgeInsets.only(left: 5)),
                     Column(
                       children: [
-                        CircleAvatar(
-                          radius: 18.0,
-                          backgroundColor: Colors.white,
+                        MaterialButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const pro_file()),
+                            );
+                          },
                           child: CircleAvatar(
-                            backgroundImage: AssetImage('assets/avt1.jpg'),
-                            radius: 16.0,
+                            radius: 18.0,
+                            backgroundColor: Colors.white,
+                            child: CircleAvatar(
+                              backgroundImage: AssetImage('assets/avt1.jpg'),
+                              radius: 16.0,
+                            ),
                           ),
                         ),
                       ],

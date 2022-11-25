@@ -1,6 +1,6 @@
 import 'package:nhom_tinh_he/layout/bang_xep_hang.dart';
 import 'package:nhom_tinh_he/layout/thong_bao.dart';
-
+import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 import '../layout/tim_doi_thu.dart';
 import 'package:flutter/material.dart';
 import '../layout/home.dart';
@@ -32,12 +32,22 @@ class _MenuState extends State<Menu> {
                       children: [
                         Row(
                           children: [
-                            CircleAvatar(
-                              radius: 18.0,
-                              backgroundColor: Colors.white,
+                            MaterialButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const pro_file()),
+                                );
+                              },
                               child: CircleAvatar(
-                                backgroundImage: AssetImage('assets/avt1.jpg'),
-                                radius: 16.0,
+                                radius: 18.0,
+                                backgroundColor: Colors.white,
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage('assets/avt1.jpg'),
+                                  radius: 16.0,
+                                ),
                               ),
                             ),
                             Padding(
