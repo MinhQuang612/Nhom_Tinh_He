@@ -1,5 +1,6 @@
-
+import '../components/menu.dart';
 import 'package:flutter/material.dart';
+import '../layout/items.dart';
 
 class thong_bao extends StatefulWidget {
   const thong_bao({Key? key}) : super(key: key);

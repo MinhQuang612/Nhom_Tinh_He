@@ -1,3 +1,6 @@
+import 'package:nhom_tinh_he/layout/bang_xep_hang.dart';
+import 'package:nhom_tinh_he/layout/thong_bao.dart';
+
 import '../layout/tim_doi_thu.dart';
 import 'package:flutter/material.dart';
 import '../layout/home.dart';
@@ -99,7 +102,7 @@ class _MenuState extends State<Menu> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => home()));
+                                    builder: (context) => thong_bao()));
                           },
                         ),
                         ListTile(
@@ -137,10 +140,8 @@ class _MenuState extends State<Menu> {
                           onTap: () {
                             Navigator.of(context)
                                 .popUntil((route) => route.isFirst);
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => home()));
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => bxh()));
                           },
                         ),
                         ListTile(

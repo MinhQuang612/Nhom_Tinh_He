@@ -39,15 +39,14 @@ class _choidonState extends State<choidon> {
                           backgroundColor: Colors.white,
                           child: CircleAvatar(
                             radius: 15.0,
-                            backgroundImage: NetworkImage(
-                                'https://s120-ava-talk.zadn.vn/3/9/1/b/1/120/d6b92bf87fa232140bd95406488f9726.jpg'),
+                            backgroundImage: AssetImage('assets/avt1.jpg'),
                           ),
                         ),
                       ],
                     ),
                     Column(children: [
                       Text(
-                        '  Lữ Cao Tiến',
+                        '  Lê Chí Thành',
                         style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
                       Text('Level 1',

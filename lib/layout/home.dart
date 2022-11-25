@@ -2,6 +2,7 @@ import 'dart:html';
 //import 'package:do_an_tinhhe/layout/solo.dart';
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/man_choi_don.dart';
+import 'package:nhom_tinh_he/layout/thong_bao.dart';
 import '../components/menu.dart';
 import '../layout/tim_doi_thu.dart';
 import '../layout/man_hinh_cho_doi_khang.dart';
@@ -28,8 +29,15 @@ class _homeState extends State<home> {
           actions: <Widget>[
             Padding(
               padding: EdgeInsets.only(right: 20),
-              child:
-                  IconButton(icon: Icon(Icons.notifications), onPressed: () {}),
+              child: IconButton(
+                  icon: Icon(Icons.notifications),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const thong_bao()),
+                    );
+                  }),
             ),
           ],
           backgroundColor: Colors.purple,

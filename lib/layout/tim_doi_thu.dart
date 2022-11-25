@@ -162,7 +162,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Hà Minh Trung',
+                                    '   Lê Minh Trung',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 18',
@@ -209,7 +209,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Hà Minh Trung',
+                                    '   Nguyễn Văn Quang',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 17',
@@ -397,7 +397,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Hà Minh Trung',
+                                    '   Lê Văn Tiến',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 16',
@@ -534,7 +534,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Hà Minh Trung',
+                                    '   Harry Mắc hài',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 1',
@@ -581,7 +581,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Hà Minh Trung',
+                                    '   A7 vấp cỏ',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 1',
@@ -628,7 +628,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Hà Minh Trung',
+                                    '   Đen hô',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 1',
@@ -816,7 +816,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Hà Minh Trung',
+                                    '   Sa che',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 1',
