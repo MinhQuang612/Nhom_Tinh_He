@@ -1,5 +1,5 @@
-import 'package:do_an_tinhhe/layout/home.dart';
-import 'package:do_an_tinhhe/layout/profile.dart';
+import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 import 'package:flutter/material.dart';
 
 class edit extends StatefulWidget {
@@ -8,6 +8,7 @@ class edit extends StatefulWidget {
   @override
   State<edit> createState() => _editState();
 }
+
 List<DropdownMenuItem<String>> get dropdownItems2 {
   List<DropdownMenuItem<String>> menuItems = [
     DropdownMenuItem(child: Text("Nam"), value: "Nam"),
@@ -29,10 +30,11 @@ String selectedValue1 = "15 Tuổi";
 bool ischecked = true;
 
 enum Sex { male, famale }
+
 class _editState extends State<edit> {
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
+    return Scaffold(
       body: SafeArea(
           child: Container(
         width: double.infinity,
@@ -108,26 +110,26 @@ class _editState extends State<edit> {
                 ),
 
                 Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10,
-                        ),
-                        child: MaterialButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const pro_file()),
-                            );
-                          },
-                          child: CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius: 16,
-                              child: Icon(
-                                Icons.arrow_back,
-                                color: Colors.black,
-                              )),
-                        ),
-                      ),
+                  padding: const EdgeInsets.only(
+                    top: 10,
+                  ),
+                  child: MaterialButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const pro_file()),
+                      );
+                    },
+                    child: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        radius: 16,
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: Colors.black,
+                        )),
+                  ),
+                ),
                 Container(
                   width: double.infinity,
                   padding: EdgeInsets.only(right: 15, top: 210),
@@ -198,7 +200,8 @@ class _editState extends State<edit> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 10,left: 25, bottom: 5),
+                          padding: const EdgeInsets.only(
+                              top: 10, left: 25, bottom: 5),
                           child: Text(
                             'Tiểu sử',
                             style: TextStyle(fontSize: 15, color: Colors.black),
@@ -245,7 +248,7 @@ class _editState extends State<edit> {
                         ),
                         Container(
                           width: double.infinity,
-                          padding: EdgeInsets.only(top:15,bottom: 15),
+                          padding: EdgeInsets.only(top: 15, bottom: 15),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -256,12 +259,12 @@ class _editState extends State<edit> {
                                       elevation: 5,
                                       minWidth: 300,
                                       onPressed: () {
-                                            Navigator.push(context,
-                                        MaterialPageRoute(
-                                          builder: (context)=>
-                                          const pro_file()
-                                          ),
-                                          );
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const pro_file()),
+                                        );
                                       },
                                       shape: RoundedRectangleBorder(
                                         side: BorderSide(
