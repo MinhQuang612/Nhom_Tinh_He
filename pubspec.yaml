@@ -95,6 +95,14 @@ flutter:
     - assets/loading-gif.gif
     - assets/giphy.gif
     - assets/nen_trang_ca_nhan.png
+    - assets/edit.png
+    - assets/history.png
+    - assets/gold-medal.png
+    - assets/bar-chart.png
+    - assets/save-money.png
+    - assets/fist.png
+    - assets/excellence.png
+    - assets/piggy-bank.png
 
   #   - images/a_dot_ham.jpeg
 
