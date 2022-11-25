@@ -1,5 +1,7 @@
-
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/chinhsuathongtin.dart';
+import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/thanh_tich.dart';
 
 class pro_file extends StatefulWidget {
   const pro_file({Key? key}) : super(key: key);
@@ -47,12 +49,13 @@ class _pro_fileState extends State<pro_file> {
                             new Spacer(),
                             MaterialButton(
                               onPressed: () {
-                                     Navigator.push(context,
-                            MaterialPageRoute(
-                              builder: (context)=>
-                              const edit()
-                              ),
-                              );
+                                // Navigator.push(
+                                //   context,
+                                //   MaterialPageRoute(
+                                //       builder: (context) =>
+                                //           const chinhsuathongtin()
+                                //          ),
+                                // );
                               },
                               child: CircleAvatar(
                                 radius: 22,
