@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/components/menu.dart';
-import 'package:nhom_tinh_he/layout/chinh_sua_trang_ca_nhan.dart';
 import 'package:nhom_tinh_he/layout/home.dart';
 
 class change_password extends StatefulWidget {
@@ -43,10 +42,10 @@ class _newchange_passwordState extends State<change_password> {
                         shape: const CircleBorder(),
                       ),
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => const edit()),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(builder: (context) => const edit()),
+                        // );
                       },
                       child: const Text('X'),
                     ),
