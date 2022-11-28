@@ -107,8 +107,8 @@ class _signinState extends State<signin> {
                               ),
                               border: OutlineInputBorder(),
                               prefixIcon:
-                                  Icon(Icons.person, color: Colors.black),
-                              hintText: 'Nhập username',
+                                  Icon(Icons.email, color: Colors.black),
+                              hintText: 'Nhập email',
                               hintStyle: TextStyle(color: Colors.grey)),
                         ),
                         SizedBox(
