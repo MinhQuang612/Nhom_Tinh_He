@@ -1,6 +1,9 @@
 import 'package:nhom_tinh_he/layout/home.dart';
 import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
+
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/doi_mk.dart';
+import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 
 class edit extends StatefulWidget {
   const edit({super.key});
@@ -57,7 +60,6 @@ class _editState extends State<edit> {
                         ),
                       ]),
                 ),
-
                 Container(
                   padding: EdgeInsets.only(left: 5, top: 160),
                   width: double.infinity,
@@ -74,8 +76,6 @@ class _editState extends State<edit> {
                     ],
                   ),
                 ),
-
-                ///////////
                 Container(
                   width: double.infinity,
                   child: Column(
@@ -108,7 +108,6 @@ class _editState extends State<edit> {
                     ],
                   ),
                 ),
-
                 Padding(
                   padding: const EdgeInsets.only(
                     top: 10,
@@ -143,12 +142,11 @@ class _editState extends State<edit> {
                               elevation: 5,
                               minWidth: 150,
                               onPressed: () {
-                                //     Navigator.push(context,
-                                // MaterialPageRoute(
-                                //   builder: (context)=>
-                                //   const MyApp()
-                                //   ),
-                                //   );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const newpass()),
+                                );
                               },
                               shape: RoundedRectangleBorder(
                                 side: BorderSide(
