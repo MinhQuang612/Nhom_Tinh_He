@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "485849116737",
+    "project_id": "doanltdd-ae185",
+    "storage_bucket": "doanltdd-ae185.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485849116737:android:c7df39665871b6b54dd6c0",
+        "android_client_info": {
+          "package_name": "com.example.nhom_tinh_he"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485849116737-r2ankjlplr9a49i90hja6jurcs84dkag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_XIHS8lCMJ2ATyJuiVjm9XR4HT43l4-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485849116737-r2ankjlplr9a49i90hja6jurcs84dkag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
