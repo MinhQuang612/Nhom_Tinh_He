@@ -30,7 +30,7 @@ class _settingState extends State<setting> {
         ),
         drawer: const Menu(),
         body: Container(
-          color: Colors.grey,
+          color: Colors.grey.shade800,
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [

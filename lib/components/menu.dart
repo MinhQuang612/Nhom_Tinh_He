@@ -33,6 +33,7 @@ class _MenuState extends State<Menu> {
                         Row(
                           children: [
                             MaterialButton(
+                               minWidth:50,
                               onPressed: () {
                                 Navigator.push(
                                   context,

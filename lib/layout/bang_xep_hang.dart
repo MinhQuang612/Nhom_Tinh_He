@@ -49,7 +49,7 @@ class _bxhState extends State<bxh> {
                   children: [
                     Center(
                       child: Container(
-                        height: 600,
+                        height: 530,
                         width: 380,
                         margin: const EdgeInsets.only(
                           top: 50.0,
@@ -72,17 +72,15 @@ class _bxhState extends State<bxh> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(
-                                top: 140,
-                              ),
+                              padding: const EdgeInsets.only(top: 140,),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
                                     height: 40,
                                     width: 300,
-                                    padding: EdgeInsets.only(
-                                        top: 4, bottom: 4, left: 5, right: 8),
+                                    padding: EdgeInsets.only(top: 4,bottom: 4,left: 5,right: 8
+                                    ),
                                     decoration: BoxDecoration(
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(20),
@@ -95,9 +93,7 @@ class _bxhState extends State<bxh> {
                                             fit: BoxFit.fill,
                                             width: 36,
                                             height: 36),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                            SizedBox(width: 10,),
                                         CircleAvatar(
                                           radius: 16,
                                           backgroundColor: Colors.white,
@@ -107,9 +103,7 @@ class _bxhState extends State<bxh> {
                                                 AssetImage('assets/6.jpg'),
                                           ),
                                         ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                         SizedBox(width: 10,),
                                         Text(
                                           'Hồng Huệ',
                                           textAlign: TextAlign.center,
@@ -117,7 +111,7 @@ class _bxhState extends State<bxh> {
                                               fontSize: 20,
                                               color: Colors.white),
                                         ),
-                                        new Spacer(),
+                                         new Spacer(),
                                         Text(
                                           '301102',
                                           textAlign: TextAlign.center,
@@ -128,14 +122,12 @@ class _bxhState extends State<bxh> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
-                                    height: 20,
-                                  ),
+                                  SizedBox(height: 20,),
                                   Container(
                                     height: 40,
                                     width: 300,
-                                    padding: EdgeInsets.only(
-                                        top: 4, bottom: 4, left: 5, right: 8),
+                                    padding: EdgeInsets.only(top: 4,bottom: 4,left: 5,right: 8
+                                    ),
                                     decoration: BoxDecoration(
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(20),
@@ -143,13 +135,12 @@ class _bxhState extends State<bxh> {
                                     child: Row(
                                       children: [
                                         Image(
-                                            image: AssetImage('assets/bac.png'),
+                                            image:
+                                                AssetImage('assets/bac.png'),
                                             fit: BoxFit.fill,
                                             width: 36,
                                             height: 36),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                             SizedBox(width: 10,),
                                         CircleAvatar(
                                           radius: 16,
                                           backgroundColor: Colors.white,
@@ -159,9 +150,7 @@ class _bxhState extends State<bxh> {
                                                 AssetImage('assets/9.jpg'),
                                           ),
                                         ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                        SizedBox(width: 10,),
                                         Text(
                                           'Minh Quang',
                                           textAlign: TextAlign.center,
@@ -169,7 +158,7 @@ class _bxhState extends State<bxh> {
                                               fontSize: 20,
                                               color: Colors.white),
                                         ),
-                                        new Spacer(),
+                                         new Spacer(),
                                         Text(
                                           '290502',
                                           textAlign: TextAlign.center,
@@ -180,14 +169,12 @@ class _bxhState extends State<bxh> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
-                                    height: 20,
-                                  ),
+                                  SizedBox(height: 20,),
                                   Container(
                                     height: 40,
                                     width: 300,
-                                    padding: EdgeInsets.only(
-                                        top: 4, bottom: 4, left: 5, right: 8),
+                                    padding: EdgeInsets.only(top: 4,bottom: 4,left: 5,right: 8
+                                    ),
                                     decoration: BoxDecoration(
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(20),
@@ -200,9 +187,7 @@ class _bxhState extends State<bxh> {
                                             fit: BoxFit.fill,
                                             width: 36,
                                             height: 36),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                            SizedBox(width: 10,),
                                         CircleAvatar(
                                           radius: 16,
                                           backgroundColor: Colors.white,
@@ -212,9 +197,7 @@ class _bxhState extends State<bxh> {
                                                 AssetImage('assets/10.jpg'),
                                           ),
                                         ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                         SizedBox(width: 10,),
                                         Text(
                                           'Thánh Trì',
                                           textAlign: TextAlign.center,
@@ -222,7 +205,7 @@ class _bxhState extends State<bxh> {
                                               fontSize: 20,
                                               color: Colors.white),
                                         ),
-                                        new Spacer(),
+                                         new Spacer(),
                                         Text(
                                           '210302',
                                           textAlign: TextAlign.center,
@@ -233,30 +216,26 @@ class _bxhState extends State<bxh> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
-                                    height: 20,
-                                  ),
+                                  SizedBox(height: 20,),
                                   Container(
                                     height: 40,
                                     width: 300,
-                                    padding: EdgeInsets.only(
-                                        top: 4, bottom: 4, left: 5, right: 8),
+                                    padding: EdgeInsets.only(top: 4,bottom: 4,left: 5,right: 8
+                                    ),
                                     decoration: BoxDecoration(
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(20),
                                     ),
                                     child: Row(
                                       children: [
-                                        Text(
+                                      Text(
                                           ' 4.   ',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               fontSize: 20,
                                               color: Colors.white),
                                         ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                            SizedBox(width: 10,),
                                         CircleAvatar(
                                           radius: 16,
                                           backgroundColor: Colors.white,
@@ -266,9 +245,7 @@ class _bxhState extends State<bxh> {
                                                 AssetImage('assets/11.jpg'),
                                           ),
                                         ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                          SizedBox(width: 10,),
                                         Text(
                                           'Văn Quý',
                                           textAlign: TextAlign.center,
@@ -276,7 +253,7 @@ class _bxhState extends State<bxh> {
                                               fontSize: 20,
                                               color: Colors.white),
                                         ),
-                                        new Spacer(),
+                                         new Spacer(),
                                         Text(
                                           '123456',
                                           textAlign: TextAlign.center,
@@ -287,14 +264,12 @@ class _bxhState extends State<bxh> {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(
-                                    height: 20,
-                                  ),
+                                  SizedBox(height: 20,),
                                   Container(
                                     height: 40,
                                     width: 300,
-                                    padding: EdgeInsets.only(
-                                        top: 4, bottom: 4, left: 5, right: 8),
+                                    padding: EdgeInsets.only(top: 4,bottom: 4,left: 5,right: 8
+                                    ),
                                     decoration: BoxDecoration(
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(20),
@@ -308,9 +283,7 @@ class _bxhState extends State<bxh> {
                                               fontSize: 20,
                                               color: Colors.white),
                                         ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                             SizedBox(width: 10,),
                                         CircleAvatar(
                                           radius: 16,
                                           backgroundColor: Colors.white,
@@ -320,9 +293,7 @@ class _bxhState extends State<bxh> {
                                                 AssetImage('assets/12.jpg'),
                                           ),
                                         ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+                                           SizedBox(width: 10,),
                                         Text(
                                           'Ngọc Hân',
                                           textAlign: TextAlign.center,
@@ -330,7 +301,7 @@ class _bxhState extends State<bxh> {
                                               fontSize: 20,
                                               color: Colors.white),
                                         ),
-                                        new Spacer(),
+                                         new Spacer(),
                                         Text(
                                           '113584',
                                           textAlign: TextAlign.center,

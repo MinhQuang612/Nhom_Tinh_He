@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/chinh_sua_trang_ca_nhan.dart';
 import 'package:nhom_tinh_he/layout/home.dart';
 import 'package:nhom_tinh_he/layout/thanh_tich.dart';
+import 'package:nhom_tinh_he/layout/thong_ke.dart';
 
 class pro_file extends StatefulWidget {
   const pro_file({Key? key}) : super(key: key);
@@ -49,11 +50,12 @@ class _pro_fileState extends State<pro_file> {
                             new Spacer(),
                             MaterialButton(
                               onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const edit()),
-                                );
+                                     Navigator.push(context,
+                            MaterialPageRoute(
+                              builder: (context)=>
+                              const edit()
+                              ),
+                              );
                               },
                               child: CircleAvatar(
                                 radius: 22,
@@ -189,14 +191,7 @@ class _pro_fileState extends State<pro_file> {
                   child: TabBarView(
                     children: [
                       achievements(),
-                      Container(
-                        color: Colors.pink,
-                        child: Center(
-                          child: Text(
-                            'Car',
-                          ),
-                        ),
-                      ),
+                      statistical(),
                       Container(
                         color: Colors.green,
                         child: Center(

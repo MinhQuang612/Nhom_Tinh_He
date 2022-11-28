@@ -14,14 +14,19 @@ class forget_pass extends StatefulWidget {
 class _forget_passState extends State<forget_pass> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+     return Scaffold(
         body: SafeArea(
       bottom: false,
       child: Container(
-        // decoration: const BoxDecoration(
-        //   image: DecorationImage(
-        //     image: AssetImage('assets/background.jpg'),
-        //     fit: BoxFit.cover)),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            end: Alignment.bottomLeft,
+            colors: [
+              Color.fromARGB(255, 202, 207, 241),
+              Color.fromARGB(255, 15, 36, 152),
+            ],
+          ),
+        ),
         padding: EdgeInsets.only(left: 15, right: 15, top: 15),
         height: double.infinity,
         width: double.infinity,
@@ -56,7 +61,7 @@ class _forget_passState extends State<forget_pass> {
                   height: 40.0,
                 ),
                 Container(
-                  child: Image(image: AssetImage('assets/logo.png')),
+                  child: Image(image: AssetImage('assets/logo2.png')),
                   height: 150,
                   width: 150,
                 ),
@@ -109,12 +114,12 @@ class _forget_passState extends State<forget_pass> {
                             elevation: 5,
                             minWidth: 180,
                             onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const newpass()),
-                        );
-                      },
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const newpass()),
+                              );
+                            },
                             shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(30.0),
                             ),

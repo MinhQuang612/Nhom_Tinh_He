@@ -12,7 +12,7 @@ class thong_bao extends StatefulWidget {
 class _thong_baoState extends State<thong_bao> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text('Tin thách đấu'),
@@ -51,7 +51,7 @@ class _thong_baoState extends State<thong_bao> {
                     ],
                   ),
                   Container(
-                    width: 115,
+                    width: 100,
                     child: Column(
                       children: [
                         Row(
@@ -59,7 +59,7 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Rosieee',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
@@ -68,7 +68,7 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Level 16',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
@@ -101,7 +101,7 @@ class _thong_baoState extends State<thong_bao> {
                         children: [
                           Text(
                             'Thách đấu bạn',
-                            style: TextStyle(fontSize: 18, color: Colors.white),
+                            style: TextStyle(fontSize: 16, color: Colors.white),
                           ),
                         ],
                       ),
@@ -109,6 +109,7 @@ class _thong_baoState extends State<thong_bao> {
                       Row(
                         children: [
                           MaterialButton(
+                            minWidth: 30,
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -122,11 +123,12 @@ class _thong_baoState extends State<thong_bao> {
                             child: Text(
                               'Vào',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ),
                           SizedBox(width: 10),
                           MaterialButton(
+                            minWidth: 30,
                             onPressed: () {},
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
@@ -134,7 +136,7 @@ class _thong_baoState extends State<thong_bao> {
                             child: Text(
                               'Từ chối',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ),
                         ],
@@ -163,7 +165,8 @@ class _thong_baoState extends State<thong_bao> {
                     ],
                   ),
                   Container(
-                    width: 115,
+                    width: 100,
+
                     child: Column(
                       children: [
                         Row(
@@ -171,7 +174,7 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Ming Quang',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
@@ -180,7 +183,7 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Level 20',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
@@ -213,7 +216,7 @@ class _thong_baoState extends State<thong_bao> {
                         children: [
                           Text(
                             'Thách đấu bạn',
-                            style: TextStyle(fontSize: 18, color: Colors.white),
+                            style: TextStyle(fontSize: 16, color: Colors.white),
                           ),
                         ],
                       ),
@@ -221,6 +224,7 @@ class _thong_baoState extends State<thong_bao> {
                       Row(
                         children: [
                           MaterialButton(
+                            minWidth: 30,
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -234,11 +238,12 @@ class _thong_baoState extends State<thong_bao> {
                             child: Text(
                               'Vào',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ),
                           SizedBox(width: 10),
                           MaterialButton(
+                            minWidth: 30,
                             onPressed: () {},
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
@@ -246,7 +251,7 @@ class _thong_baoState extends State<thong_bao> {
                             child: Text(
                               'Từ chối',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ),
                         ],
@@ -283,7 +288,7 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Sơn Tùnggg',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
@@ -292,32 +297,14 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Level 30',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
                       ],
                     ),
                   ),
-                  new Spacer(),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 18.0,
-                        backgroundColor: Colors.white,
-                        child: CircleAvatar(
-                          radius: 16.0,
-                          backgroundColor: Colors.grey.shade800,
-                          child: const Text(
-                            '30',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+
                   new Spacer(),
                   Column(
                     children: [
@@ -325,7 +312,7 @@ class _thong_baoState extends State<thong_bao> {
                         children: [
                           Text(
                             'Lời mời đã hết hạn',
-                            style: TextStyle(fontSize: 18, color: Colors.white),
+                            style: TextStyle(fontSize: 16, color: Colors.white),
                           ),
                           IconButton(
                               onPressed: () {},
@@ -368,7 +355,7 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Justin Bieber',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
@@ -377,32 +364,14 @@ class _thong_baoState extends State<thong_bao> {
                             Text(
                               '   Level 5',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ],
                         ),
                       ],
                     ),
                   ),
-                  new Spacer(),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 18.0,
-                        backgroundColor: Colors.white,
-                        child: CircleAvatar(
-                          radius: 16.0,
-                          backgroundColor: Colors.grey.shade800,
-                          child: const Text(
-                            '30',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+
                   new Spacer(),
                   Column(
                     children: [
@@ -410,7 +379,7 @@ class _thong_baoState extends State<thong_bao> {
                         children: [
                           Text(
                             'Lời mời đã hết hạn',
-                            style: TextStyle(fontSize: 18, color: Colors.white),
+                            style: TextStyle(fontSize: 16, color: Colors.white),
                           ),
                           IconButton(
                               onPressed: () {},
