@@ -31,10 +31,6 @@ class _signinState extends State<signin> {
         body: SafeArea(
       bottom: false,
       child: Container(
-        // decoration: const BoxDecoration(
-        //   image: DecorationImage(
-        //     image: AssetImage('assets/background.jpg'),
-        //     fit: BoxFit.cover)),
         padding: EdgeInsets.only(left: 15, right: 15, top: 15),
         height: double.infinity,
         width: double.infinity,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nhom_tinh_he/layout/change_pass.dart';
 import 'package:nhom_tinh_he/layout/doi_mk.dart';
 import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 
@@ -146,7 +147,8 @@ class _editState extends State<edit> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const newpass()),
+                                      builder: (context) =>
+                                          const change_password()),
                                 );
                               },
                               shape: RoundedRectangleBorder(
