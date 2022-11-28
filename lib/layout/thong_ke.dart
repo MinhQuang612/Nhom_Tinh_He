@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import '../components/menu.dart';
-import '../main.dart';
-import '../layout/chinh_sua_trang_ca_nhan.dart';
 
 class thongke extends StatelessWidget {
   const thongke({super.key});
