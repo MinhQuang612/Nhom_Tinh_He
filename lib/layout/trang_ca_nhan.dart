@@ -50,11 +50,12 @@ class _pro_fileState extends State<pro_file> {
                             new Spacer(),
                             MaterialButton(
                               onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const edit()),
-                                );
+                                     Navigator.push(context,
+                            MaterialPageRoute(
+                              builder: (context)=>
+                              const edit()
+                              ),
+                              );
                               },
                               child: CircleAvatar(
                                 radius: 22,
@@ -190,7 +191,11 @@ class _pro_fileState extends State<pro_file> {
                   child: TabBarView(
                     children: [
                       achievements(),
+<<<<<<< HEAD
                       thongke(),
+=======
+                      statistical(),
+>>>>>>> Minh-Quang
                       Container(
                         color: Colors.green,
                         child: Center(

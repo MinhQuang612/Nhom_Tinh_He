@@ -13,7 +13,7 @@ class play_challenge extends StatefulWidget {
 class _play_challengeState extends State<play_challenge> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       body: SafeArea(
         bottom: false,
         child: Container(
@@ -30,7 +30,7 @@ class _play_challengeState extends State<play_challenge> {
                 Container(
                   color: Colors.black,
                   padding:
-                      EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 15),
+                      EdgeInsets.only(top: 10, left: 15, right: 15, bottom: 10),
                   child: Row(children: [
                     Column(
                       children: [
@@ -59,7 +59,7 @@ class _play_challengeState extends State<play_challenge> {
                           radius: 18.0,
                           backgroundColor: Colors.white,
                           child: CircleAvatar(
-                            radius: 14.0,
+                            radius: 16.0,
                             backgroundColor: Colors.black,
                             child: const Text('30'),
                           ),
@@ -90,17 +90,18 @@ class _play_challengeState extends State<play_challenge> {
                   ]),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Container(
                   padding:
-                      EdgeInsets.only(left: 35, right: 35, top: 15, bottom: 15),
+                      EdgeInsets.only( top: 15, bottom: 15),
                   child: Row(
                     children: [
                       Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             MaterialButton(
+                              minWidth:MediaQuery.of(context).size.width/6,
                               onPressed: () {},
                               child: CircleAvatar(
                                 radius: 25,
@@ -121,6 +122,7 @@ class _play_challengeState extends State<play_challenge> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             MaterialButton(
+                              minWidth:MediaQuery.of(context).size.width/6,
                               onPressed: () {},
                               child: CircleAvatar(
                                 radius: 25,
@@ -140,6 +142,7 @@ class _play_challengeState extends State<play_challenge> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             MaterialButton(
+                              minWidth:MediaQuery.of(context).size.width/6,
                               onPressed: () {},
                               child: CircleAvatar(
                                 radius: 25,
@@ -161,6 +164,7 @@ class _play_challengeState extends State<play_challenge> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             MaterialButton(
+                              minWidth:MediaQuery.of(context).size.width/6,
                               onPressed: () {},
                               child: CircleAvatar(
                                 radius: 25,
@@ -180,6 +184,7 @@ class _play_challengeState extends State<play_challenge> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             MaterialButton(
+                              minWidth:MediaQuery.of(context).size.width/6,
                               onPressed: () {
                                 showDialog(
                                   context: context,
@@ -237,7 +242,7 @@ class _play_challengeState extends State<play_challenge> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Stack(
                   children: <Widget>[
@@ -297,7 +302,7 @@ class _play_challengeState extends State<play_challenge> {
                   ],
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -305,7 +310,7 @@ class _play_challengeState extends State<play_challenge> {
                     MaterialButton(
                       height: 60,
                       elevation: 5,
-                      minWidth: 440,
+                      minWidth: 400,
                       onPressed: () {},
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
@@ -324,7 +329,7 @@ class _play_challengeState extends State<play_challenge> {
                   ],
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 15,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -332,13 +337,15 @@ class _play_challengeState extends State<play_challenge> {
                     MaterialButton(
                       height: 60,
                       elevation: 5,
-                      minWidth: 440,
+                      minWidth: 400,
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const result_challenge()),
-                        );
+                        Navigator.push(context,
+                    MaterialPageRoute(
+                      
+                      builder: (context)=>
+                      const result_challenge()
+                      ),
+                      );
                       },
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
@@ -357,7 +364,7 @@ class _play_challengeState extends State<play_challenge> {
                   ],
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 15,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -365,7 +372,7 @@ class _play_challengeState extends State<play_challenge> {
                     MaterialButton(
                       height: 60,
                       elevation: 5,
-                      minWidth: 440,
+                      minWidth: 400,
                       onPressed: () {},
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
@@ -384,7 +391,7 @@ class _play_challengeState extends State<play_challenge> {
                   ],
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 15,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -392,7 +399,7 @@ class _play_challengeState extends State<play_challenge> {
                     MaterialButton(
                       height: 60,
                       elevation: 5,
-                      minWidth: 440,
+                      minWidth: 400,
                       onPressed: () {},
                       shape: RoundedRectangleBorder(
                         side: BorderSide(

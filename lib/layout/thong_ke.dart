@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import '../components/menu.dart';
 import '../main.dart';
 import '../layout/chinh_sua_trang_ca_nhan.dart';
 
 class thongke extends StatelessWidget {
   const thongke({super.key});
+=======
+
+class statistical extends StatelessWidget {
+  const statistical({super.key});
+>>>>>>> Minh-Quang
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +60,11 @@ class thongke extends StatelessWidget {
                                           new Spacer(),
                                           Image(
                                             image:
+<<<<<<< HEAD
                                                 AssetImage('assets/dilen.png'),
+=======
+                                                AssetImage('assets/next-level.png'),
+>>>>>>> Minh-Quang
                                             width: 50,
                                             height: 50,
                                           ),
@@ -113,7 +123,11 @@ class thongke extends StatelessWidget {
                                           new Spacer(),
                                           Image(
                                             image: AssetImage(
+<<<<<<< HEAD
                                                 'assets/vongthoigian.png'),
+=======
+                                                'assets/history.png'),
+>>>>>>> Minh-Quang
                                             width: 40,
                                             height: 40,
                                           ),
@@ -183,7 +197,11 @@ class thongke extends StatelessWidget {
                                           new Spacer(),
                                           Image(
                                             image: AssetImage(
+<<<<<<< HEAD
                                                 'assets/tanglen.png'),
+=======
+                                                'assets/profit.png'),
+>>>>>>> Minh-Quang
                                             width: 60,
                                             height: 50,
                                           ),
@@ -242,7 +260,11 @@ class thongke extends StatelessWidget {
                                               color: Colors.white)),
                                       new Spacer(),
                                       Image(
+<<<<<<< HEAD
                                         image: AssetImage('assets/caican.png'),
+=======
+                                        image: AssetImage('assets/scale.png'),
+>>>>>>> Minh-Quang
                                         width: 50,
                                         height: 50,
                                       ),
@@ -270,4 +292,8 @@ class thongke extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Minh-Quang

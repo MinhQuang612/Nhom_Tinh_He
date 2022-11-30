@@ -40,8 +40,9 @@ class _items_soloState extends State<items_solo> {
                       );
                     },
                   ),
-                  SizedBox(width: 150),
+                  SizedBox(width: 100),
                   Text("Vật phẩm",
+                      textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 22, color: Colors.white)),
                 ]),
               ),
@@ -65,7 +66,7 @@ class _items_soloState extends State<items_solo> {
                         ),
                       ),
                       SizedBox(
-                        width: 50,
+                        width: 20,
                       ),
                       Text(
                         'Tối đa 1 vật phẩm',
@@ -88,7 +89,7 @@ class _items_soloState extends State<items_solo> {
                         ),
                       ),
                       SizedBox(
-                        width: 50,
+                        width: 20,
                       ),
                       Text(
                         'Mua tối đa 3 lần mỗi ngày',
@@ -123,7 +124,7 @@ class _items_soloState extends State<items_solo> {
                         ),
                       ),
                       SizedBox(
-                        width: 50,
+                        width: 20,
                       ),
                       Text(
                         'Tối đa 1 vật phẩm',
@@ -146,7 +147,7 @@ class _items_soloState extends State<items_solo> {
                         ),
                       ),
                       SizedBox(
-                        width: 50,
+                        width: 20,
                       ),
                       Text(
                         'Tối đa 1 vật phẩm',
@@ -169,7 +170,7 @@ class _items_soloState extends State<items_solo> {
                         ),
                       ),
                       SizedBox(
-                        width: 50,
+                        width: 20,
                       ),
                       Text(
                         'Tối đa 1 vật phẩm',
@@ -179,7 +180,7 @@ class _items_soloState extends State<items_solo> {
                   ],
                 ),
               ),
-              SizedBox(height: 200),
+              SizedBox(height: 100),
               Container(
                 padding: EdgeInsets.only(bottom: 20),
                 child: Column(

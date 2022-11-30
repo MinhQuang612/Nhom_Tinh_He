@@ -14,8 +14,9 @@ class result_challenge extends StatefulWidget {
 class _result_challengeState extends State<result_challenge> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+     return Scaffold(
       appBar: AppBar(
+         automaticallyImplyLeading: false,
         centerTitle: true,
         title: Text('Kết quả'),
         backgroundColor: Colors.grey.shade600,
@@ -29,7 +30,7 @@ class _result_challengeState extends State<result_challenge> {
           child: Column(
             children: [
               SizedBox(
-                height: 20,
+                height: 5,
               ),
               SizedBox(
                 width: 400,
@@ -109,13 +110,13 @@ class _result_challengeState extends State<result_challenge> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.only(top: 20),
+                      padding: EdgeInsets.only(top: 10),
                       child: Row(
                         children: [
                           Text(
                             'Vui lòng chờ đối phương hoàn thành lượt đấu',
                             textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: 18),
                           )
                         ],
                       ),
@@ -123,9 +124,7 @@ class _result_challengeState extends State<result_challenge> {
                   ],
                 ),
               ),
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 20,),
               Container(
                 decoration: new BoxDecoration(
                   boxShadow: [
@@ -145,7 +144,7 @@ class _result_challengeState extends State<result_challenge> {
                   ),
                   child: SizedBox(
                     width: 400,
-                    height: 250,
+                    height: 240,
                     child: Stack(
                       children: [
                         Padding(
@@ -251,7 +250,7 @@ class _result_challengeState extends State<result_challenge> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -335,13 +334,11 @@ class _result_challengeState extends State<result_challenge> {
                         height: 45.0,
                         elevation: 5,
                         minWidth: 180,
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const map()),
-                          );
-                        },
+                        onPressed: () { Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const map()),
+                        );},
                         shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(30.0),
                         ),
@@ -357,11 +354,13 @@ class _result_challengeState extends State<result_challenge> {
                         elevation: 5,
                         minWidth: 180,
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const challenge()),
-                          );
+                          Navigator.push(context,
+                    MaterialPageRoute(
+                      
+                      builder: (context)=>
+                      const challenge()
+                      ),
+                      );
                         },
                         shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(30.0),

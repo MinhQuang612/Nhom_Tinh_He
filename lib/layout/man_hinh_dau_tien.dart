@@ -1,5 +1,4 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/dang_ky.dart';
 import 'package:nhom_tinh_he/layout/dang_nhap.dart';
@@ -14,10 +13,26 @@ class first_screen extends StatefulWidget {
 class _first_screenState extends State<first_screen> {
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return Scaffold(
       body: SafeArea(
         bottom: false,
         child: Container(
+=======
+     return Scaffold(
+      body: SafeArea(
+        bottom: false,
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              end: Alignment.bottomLeft,
+              colors: [
+                Color.fromARGB(255, 202, 207, 241),
+                Color.fromARGB(255, 15, 36, 152),
+              ],
+            ),
+          ),
+>>>>>>> Minh-Quang
           padding: EdgeInsets.only(left: 15, right: 15),
           height: double.infinity,
           width: double.infinity,
@@ -27,6 +42,7 @@ class _first_screenState extends State<first_screen> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+<<<<<<< HEAD
                   SizedBox(
                     height: 60.0,
                   ),
@@ -35,9 +51,22 @@ class _first_screenState extends State<first_screen> {
                     height: 220,
                     width: 220,
                   ),
+=======
+>>>>>>> Minh-Quang
                   SizedBox(
-                    height: 200,
+                    height: 60.0,
                   ),
+<<<<<<< HEAD
+=======
+                  Container(
+                    child: Image(image: AssetImage('assets/logo2.png')),
+                    height: 220,
+                    width: 220,
+                  ),
+                  SizedBox(
+                    height: 160,
+                  ),
+>>>>>>> Minh-Quang
                   MaterialButton(
                       height: 50.0,
                       elevation: 5,
@@ -57,7 +86,11 @@ class _first_screenState extends State<first_screen> {
                           Theme.of(context).primaryColor.withOpacity(0.50),
                       disabledElevation: 0,
                       child: Text(
+<<<<<<< HEAD
                         'Sign in',
+=======
+                        'Đăng nhập',
+>>>>>>> Minh-Quang
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       )),
                   SizedBox(
@@ -71,7 +104,11 @@ class _first_screenState extends State<first_screen> {
                       indent: 15.0,
                       endIndent: 15.0,
                     )),
+<<<<<<< HEAD
                     Text("OR"),
+=======
+                    Text("Hoặc",style: TextStyle(color: Colors.white),),
+>>>>>>> Minh-Quang
                     Expanded(
                         child: Divider(
                       thickness: 1.5,
@@ -102,7 +139,11 @@ class _first_screenState extends State<first_screen> {
                           Theme.of(context).primaryColor.withOpacity(0.50),
                       disabledElevation: 0,
                       child: Text(
+<<<<<<< HEAD
                         'Sign up',
+=======
+                        'Đăng ký',
+>>>>>>> Minh-Quang
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       )),
                 ]),

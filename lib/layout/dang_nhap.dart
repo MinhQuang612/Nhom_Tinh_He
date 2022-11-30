@@ -1,3 +1,4 @@
+
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +6,7 @@ import 'package:nhom_tinh_he/layout/dang_ky.dart';
 import 'package:nhom_tinh_he/layout/home.dart';
 import 'package:nhom_tinh_he/layout/quen_mk.dart';
 import '../layout/man_hinh_dau_tien.dart';
+
 
 class signin extends StatefulWidget {
   const signin({Key? key}) : super(key: key);
@@ -15,29 +17,41 @@ class signin extends StatefulWidget {
 
 class _signinState extends State<signin> {
   bool hide_pass = true;
-
+  
   BoxDecoration myBoxDecoration() {
-    return BoxDecoration(
-      border: Border.all(
-        color: Colors.grey,
-        width: 1, //
-      ),
-    );
-  }
-
+  return BoxDecoration(
+    border: Border.all(
+      color: Colors.grey,
+      width: 1, //               
+    ),
+  );
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
       bottom: false,
       child: Container(
+<<<<<<< HEAD
+=======
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            end: Alignment.bottomLeft,
+            colors: [
+              Color.fromARGB(255, 202, 207, 241),
+              Color.fromARGB(255, 15, 36, 152),
+            ],
+          ),
+        ),
+
+>>>>>>> Minh-Quang
         padding: EdgeInsets.only(left: 15, right: 15, top: 15),
         height: double.infinity,
         width: double.infinity,
         // width: MediaQuery.of(context).size.width,
         // height: MediaQuery.of(context).size.height,
         child: SingleChildScrollView(
-            padding: EdgeInsets.only(bottom: 15),
+
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -62,15 +76,15 @@ class _signinState extends State<signin> {
                   ],
                 ),
                 SizedBox(
-                  height: 40.0,
+                  height: 10.0,
                 ),
                 Container(
-                  child: Image(image: AssetImage('assets/logo.png')),
+                  child: Image(image: AssetImage('assets/logo2.png')),
                   height: 150,
                   width: 150,
                 ),
                 SizedBox(
-                  height: 40.0,
+                  height: 20.0,
                 ),
                 //Card() thì thành khung
                 Container(
@@ -82,7 +96,7 @@ class _signinState extends State<signin> {
                       children: <Widget>[
                         Text('ĐĂNG NHẬP',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.white,
                               fontSize: 30,
                             )),
                         SizedBox(
@@ -103,12 +117,12 @@ class _signinState extends State<signin> {
                               ),
                               border: OutlineInputBorder(),
                               prefixIcon:
-                                  Icon(Icons.person, color: Colors.black),
-                              hintText: 'Nhập username',
+                                  Icon(Icons.email, color: Colors.black),
+                              hintText: 'Nhập email',
                               hintStyle: TextStyle(color: Colors.grey)),
                         ),
                         SizedBox(
-                          height: 15.0,
+                          height: 10.0,
                         ),
                         TextField(
                           obscureText: hide_pass,
@@ -140,7 +154,7 @@ class _signinState extends State<signin> {
                               hintStyle: TextStyle(color: Colors.grey)),
                         ),
                         SizedBox(
-                          height: 20.0,
+                          height: 5.0,
                         ),
                         TextButton(
                             onPressed: () {
@@ -154,7 +168,7 @@ class _signinState extends State<signin> {
                                 style: TextStyle(
                                     fontSize: 15, color: Colors.red))),
                         SizedBox(
-                          height: 15.0,
+                          height: 5.0,
                         ),
                         MaterialButton(
                             height: 45.0,
@@ -176,16 +190,16 @@ class _signinState extends State<signin> {
                                 .withOpacity(0.50),
                             disabledElevation: 0,
                             child: Text(
-                              'Login',
+                              'Đăng nhập',
                               textAlign: TextAlign.center,
                               style: TextStyle(color: Colors.white),
                             )),
                         SizedBox(
-                          height: 15.0,
+                          height: 10.0,
                         ),
-                        Text('Hoặc đăng nhập bằng'),
+                        Text('Hoặc đăng nhập bằng' , style: TextStyle(color: Colors.white)),
                         SizedBox(
-                          height: 15.0,
+                          height: 5.0,
                         ),
                         Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -195,7 +209,7 @@ class _signinState extends State<signin> {
                                 child: ElevatedButton.icon(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
-                                    primary: Colors.white,
+                                    primary: Colors.black,
                                   ),
                                   icon: Icon(
                                     Icons.facebook,
@@ -211,7 +225,7 @@ class _signinState extends State<signin> {
                                 child: ElevatedButton.icon(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
-                                    primary: Colors.white,
+                                    primary: Colors.black,
                                   ),
                                   icon: Icon(
                                     Icons.mail,
@@ -222,7 +236,7 @@ class _signinState extends State<signin> {
                                 ),
                               ),
                             ]),
-                        SizedBox(height: 15.0),
+                        SizedBox(height: 5.0),
                         Divider(
                           thickness: 1.5,
                           color: Colors.grey,
@@ -232,7 +246,7 @@ class _signinState extends State<signin> {
                         Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('Chưa có tài khoản?'),
+                              Text('Chưa có tài khoản?', style: TextStyle(color: Colors.white)),
                               TextButton(
                                 onPressed: () {
                                   Navigator.push(

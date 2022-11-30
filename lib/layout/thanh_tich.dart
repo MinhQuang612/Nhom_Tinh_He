@@ -32,33 +32,35 @@ class achievements extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Người năng nổ',
-                              textAlign: TextAlign.left,
-                              style:
-                                  TextStyle(fontSize: 18,fontWeight: FontWeight.bold ),
-                            )
-                          ],
+                        Container(
+                          width: 280,
+                          child: Row(
+                            children: [
+                              Text(
+                                'Người năng nổ',
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                         Row(
                           children: [
                             Text(
-                              '  Hoàn thành hết một cấp độ trong 5 phút',
+                              '  Hoàn thành một cấp độ trong 5 phút',
                               style:
                                   TextStyle(fontSize: 18, color: Colors.grey),
                             )
                           ],
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
                 new Divider(
                   height: 30,
                 ),
-                 Row(
+                Row(
                   children: [
                     Column(
                       children: [
@@ -69,7 +71,8 @@ class achievements extends StatelessWidget {
                             backgroundColor: Colors.white,
                             radius: 24,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/excellence.png'),
+                              backgroundImage:
+                                  AssetImage('assets/excellence.png'),
                               backgroundColor: Colors.white,
                               radius: 20,
                             ),
@@ -79,23 +82,26 @@ class achievements extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Người cầu toàn',
-                              textAlign: TextAlign.left,
-                              style:
-                                  TextStyle(fontSize: 18,fontWeight: FontWeight.bold ),
-                            )
-                          ],
+                        Container(
+                          width: 290,
+                          child: Row(
+                            children: [
+                              Text(
+                                'Người cầu toàn',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
                         ),
                         Row(
                           children: [
                             Text(
-                              '  Hoàn thành hết cấp độ mà không mắc lỗi',
+                              '  Hoàn thành cấp độ mà không mắc lỗi',
                               style:
                                   TextStyle(fontSize: 18, color: Colors.grey),
-                            )
+                            ),
                           ],
                         ),
                       ],
@@ -105,7 +111,7 @@ class achievements extends StatelessWidget {
                 new Divider(
                   height: 30,
                 ),
-                 Row(
+                Row(
                   children: [
                     Column(
                       children: [
@@ -116,7 +122,8 @@ class achievements extends StatelessWidget {
                             backgroundColor: Colors.white,
                             radius: 24,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/save-money.png'),
+                              backgroundImage:
+                                  AssetImage('assets/save-money.png'),
                               backgroundColor: Colors.white,
                               radius: 20,
                             ),
@@ -126,24 +133,30 @@ class achievements extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Kế toán viên',
-                              textAlign: TextAlign.left,
-                              style:
-                                  TextStyle(fontSize: 18,fontWeight: FontWeight.bold ),
-                            )
-                          ],
+                        Container(
+                          width: 280,
+                          child: Row(
+                            children: [
+                              Text(
+                                '  Kế toán viên',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              '  Sử dụng 5000 xu',
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.grey),
-                            )
-                          ],
+                        Container(
+                          width: 280,
+                          child: Row(
+                            children: [
+                              Text(
+                                '  Sử dụng 5000 xu',
+                                style:
+                                    TextStyle(fontSize: 18, color: Colors.grey),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     )
@@ -152,7 +165,7 @@ class achievements extends StatelessWidget {
                 new Divider(
                   height: 30,
                 ),
-                 Row(
+                Row(
                   children: [
                     Column(
                       children: [
@@ -163,7 +176,8 @@ class achievements extends StatelessWidget {
                             backgroundColor: Colors.white,
                             radius: 24,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/piggy-bank.png'),
+                              backgroundImage:
+                                  AssetImage('assets/piggy-bank.png'),
                               backgroundColor: Colors.white,
                               radius: 20,
                             ),
@@ -173,24 +187,30 @@ class achievements extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Thợ đào vàng',
-                              textAlign: TextAlign.left,
-                              style:
-                                  TextStyle(fontSize: 18,fontWeight: FontWeight.bold ),
-                            )
-                          ],
+                        Container(
+                          width: 280,
+                          child: Row(
+                            children: [
+                              Text(
+                                '  Thợ đào vàng',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              '  Thu thập 1000 xu',
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.grey),
-                            )
-                          ],
+                        Container(
+                          width: 280,
+                          child: Row(
+                            children: [
+                              Text(
+                                '  Thu thập 1000 xu',
+                                style:
+                                    TextStyle(fontSize: 18, color: Colors.grey),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     )

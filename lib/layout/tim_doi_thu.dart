@@ -1,3 +1,5 @@
+import 'package:nhom_tinh_he/layout/thong_bao.dart';
+
 import 'items.dart';
 import 'package:flutter/material.dart';
 import '../components/menu.dart';
@@ -19,7 +21,7 @@ class _challengeState extends State<challenge> {
       );
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
+     return DefaultTabController(
       initialIndex: 0,
       length: 5,
       child: Scaffold(
@@ -29,8 +31,15 @@ class _challengeState extends State<challenge> {
           actions: <Widget>[
             Padding(
               padding: EdgeInsets.only(right: 20),
-              child:
-                  IconButton(icon: Icon(Icons.notifications), onPressed: () {}),
+              child: IconButton(
+                  icon: Icon(Icons.notifications),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const thong_bao()),
+                    );
+                  }),
             ),
           ],
           backgroundColor: Colors.purple,
@@ -46,11 +55,12 @@ class _challengeState extends State<challenge> {
         body: TabBarView(
           children: <Widget>[
             Material(
-              color: Colors.grey.shade700,
+              color: Colors.black,
               child: ListView(
                 children: [
                   Container(
                     padding: EdgeInsets.only(top: 10, right: 10, left: 10),
+
                     child: Row(
                       children: [
                         Container(
@@ -162,7 +172,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Lê Minh Trung',
+                                    '   Hà Minh Trung',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 18',
@@ -209,7 +219,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Nguyễn Văn Quang',
+                                    '   Hà Minh Trung',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 17',
@@ -377,56 +387,10 @@ class _challengeState extends State<challenge> {
                       ],
                     ),
                   ),
-                  new Divider(),
-                  Container(
-                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
-                    child: Row(
-                      children: [
-                        Container(
-                          width: MediaQuery.of(context).size.width / 2,
-                          child: Row(
-                            children: [
-                              CircleAvatar(
-                                radius: 22,
-                                backgroundColor: Colors.white,
-                                child: CircleAvatar(
-                                  radius: 20.0,
-                                  backgroundImage: AssetImage('assets/12.jpg'),
-                                ),
-                              ),
-                              Column(
-                                children: [
-                                  Text(
-                                    '   Lê Văn Tiến',
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  Text('Level 16',
-                                      style: TextStyle(color: Colors.white))
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        new Spacer(),
-                        ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15)),
-                            ),
-                            onPressed: (() {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const items()),
-                              );
-                            }),
-                            child: Text('Thách đấu')),
-                      ],
-                    ),
-                  ),
+
                   new Divider(),
                   SizedBox(
-                    height: 50,
+                    height: 15,
                   ),
                   Container(
                     padding: const EdgeInsets.only(bottom: 15),
@@ -465,7 +429,7 @@ class _challengeState extends State<challenge> {
               ),
             ),
             Material(
-              color: Colors.grey.shade700,
+              color: Colors.black,
               child: ListView(
                 children: [
                   Container(
@@ -534,7 +498,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Harry Mắc hài',
+                                    '   Hà Minh Trung',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 1',
@@ -581,7 +545,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   A7 vấp cỏ',
+                                    '   Hà Minh Trung',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 1',
@@ -628,7 +592,7 @@ class _challengeState extends State<challenge> {
                               Column(
                                 children: [
                                   Text(
-                                    '   Đen hô',
+                                    '   Hà Minh Trung',
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   Text('Level 1',
@@ -796,56 +760,10 @@ class _challengeState extends State<challenge> {
                       ],
                     ),
                   ),
-                  new Divider(),
-                  Container(
-                    padding: EdgeInsets.only(top: 10, right: 10, left: 10),
-                    child: Row(
-                      children: [
-                        Container(
-                          width: MediaQuery.of(context).size.width / 2,
-                          child: Row(
-                            children: [
-                              CircleAvatar(
-                                radius: 22,
-                                backgroundColor: Colors.white,
-                                child: CircleAvatar(
-                                  radius: 20.0,
-                                  backgroundImage: AssetImage('assets/12.jpg'),
-                                ),
-                              ),
-                              Column(
-                                children: [
-                                  Text(
-                                    '   Sa che',
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  Text('Level 1',
-                                      style: TextStyle(color: Colors.white))
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        new Spacer(),
-                        ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15)),
-                            ),
-                            onPressed: (() {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const items()),
-                              );
-                            }),
-                            child: Text('Thách đấu')),
-                      ],
-                    ),
-                  ),
+
                   new Divider(),
                   SizedBox(
-                    height: 50,
+                    height: 15,
                   ),
                   Container(
                     padding: const EdgeInsets.only(bottom: 15),
@@ -885,17 +803,35 @@ class _challengeState extends State<challenge> {
             ),
             Material(
               child: Container(
-                color: Colors.grey.shade700,
+                color: Colors.black,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'Cần kết nối với Facebook để có thể chơi với bạn bè',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Cần kết nối với Facebook để ',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'có thể chơi với bạn bè ',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: 30,
@@ -909,7 +845,7 @@ class _challengeState extends State<challenge> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          primary: Colors.black,
+                          primary: Colors.white,
                         ),
                         icon: Icon(
                           Icons.facebook,

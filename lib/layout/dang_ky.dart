@@ -40,13 +40,17 @@ class _signupState extends State<signup> {
       body: SafeArea(
         bottom: false,
         child: Container(
+            // decoration: const BoxDecoration(
+            //   image: DecorationImage(
+            //     image: AssetImage('assets/background.jpg'),
+            //     fit: BoxFit.cover)),
             padding: EdgeInsets.only(left: 15, right: 15, top: 15),
             height: double.infinity,
             width: double.infinity,
             // width: MediaQuery.of(context).size.width,
             // height: MediaQuery.of(context).size.height,
             child: SingleChildScrollView(
-                padding: EdgeInsets.only(bottom: 15),
+                padding: EdgeInsets.only(bottom: 5),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -71,7 +75,7 @@ class _signupState extends State<signup> {
                       ],
                     ),
                     SizedBox(
-                      height: 40.0,
+                      height: 10.0,
                     ),
                     Container(
                       child: Image(image: AssetImage('assets/logo.png')),
@@ -211,11 +215,13 @@ class _signupState extends State<signup> {
                               elevation: 5,
                               minWidth: 180,
                               onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const home()),
-                                );
+                                //   Navigator.push(context,
+                                // MaterialPageRoute(
+
+                                //   builder: (context)=>
+                                //   const home()
+                                //   ),
+                                //   );
                               },
                               shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(30.0),

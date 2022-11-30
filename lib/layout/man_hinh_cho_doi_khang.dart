@@ -20,7 +20,7 @@ class _vsState extends State<vs> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       body: SafeArea(
         bottom: false,
         child: Container(
@@ -40,11 +40,11 @@ class _vsState extends State<vs> {
                   Column(
                     children: [
                       CircleAvatar(
-                        radius: 50,
+                        radius: 45,
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           backgroundImage: AssetImage('assets/avt1.jpg'),
-                          radius: 45.0,
+                          radius: 40.0,
                         ),
                       ),
                     ],
@@ -70,16 +70,16 @@ class _vsState extends State<vs> {
                     ]),
                   ]),
                 ]),
-                SizedBox(height: 100),
+                SizedBox(height: 70),
                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Image(
                     image: AssetImage('assets/giphy.gif'),
-                    height: 130,
+                    height: 120,
                     width: 150,
                     fit: BoxFit.fill,
                   )
                 ]),
-                SizedBox(height: 100),
+                SizedBox(height: 70),
                 Row(children: [
                   new Spacer(),
                   Column(children: [
@@ -105,27 +105,24 @@ class _vsState extends State<vs> {
                   Column(
                     children: [
                       CircleAvatar(
-                        radius: 50,
+                        radius: 45,
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
-                          radius: 45.0,
+                          radius: 40.0,
                           backgroundImage: AssetImage('assets/avt.jpg'),
                         ),
                       ),
                     ],
                   ),
                 ]),
-                SizedBox(
-                  height: 40,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                SizedBox(height: 40,),
+                Row( mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Image(
-                        image: AssetImage('assets/loading-gif.gif'),
-                        fit: BoxFit.fill,
-                        height: 50,
-                        width: 50),
+                    Image(image: AssetImage('assets/loading-gif.gif'),
+                    fit: BoxFit.fill,
+                    height: 50,
+                    width:50
+                    ),
                   ],
                 )
               ],
