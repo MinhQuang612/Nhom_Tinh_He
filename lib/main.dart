@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:nhom_tinh_he/layout/change_pass.dart';
-import 'package:nhom_tinh_he/layout/chinh_sua_trang_ca_nhan.dart';
-=======
 import 'package:nhom_tinh_he/layout/choidon.dart';
->>>>>>> Minh-Quang
 import 'package:nhom_tinh_he/layout/man_hinh_dau_tien.dart';
 
 void main() {
@@ -22,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: choidon(),
+      home: first_screen(),
     );
   }
 }

@@ -40,10 +40,15 @@ class _signupState extends State<signup> {
       body: SafeArea(
         bottom: false,
         child: Container(
-            // decoration: const BoxDecoration(
-            //   image: DecorationImage(
-            //     image: AssetImage('assets/background.jpg'),
-            //     fit: BoxFit.cover)),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                end: Alignment.bottomLeft,
+                colors: [
+                  Color.fromARGB(255, 202, 207, 241),
+                  Color.fromARGB(255, 15, 36, 152),
+                ],
+              ),
+            ),
             padding: EdgeInsets.only(left: 15, right: 15, top: 15),
             height: double.infinity,
             width: double.infinity,
@@ -78,12 +83,12 @@ class _signupState extends State<signup> {
                       height: 10.0,
                     ),
                     Container(
-                      child: Image(image: AssetImage('assets/logo.png')),
+                      child: Image(image: AssetImage('assets/logo2.png')),
                       height: 150,
                       width: 150,
                     ),
                     SizedBox(
-                      height: 40.0,
+                      height: 20.0,
                     ),
                     Container(
                       child: Container(
@@ -93,7 +98,7 @@ class _signupState extends State<signup> {
                         child: Column(children: <Widget>[
                           Text('ĐĂNG KÝ',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 30,
                               )),
                           SizedBox(
@@ -119,7 +124,7 @@ class _signupState extends State<signup> {
                                 hintStyle: TextStyle(color: Colors.grey)),
                           ),
                           SizedBox(
-                            height: 15.0,
+                            height: 10.0,
                           ),
                           TextField(
                             autofocus: true,
@@ -141,7 +146,7 @@ class _signupState extends State<signup> {
                                 hintStyle: TextStyle(color: Colors.grey)),
                           ),
                           SizedBox(
-                            height: 15.0,
+                            height: 10.0,
                           ),
                           TextField(
                             autofocus: true,
@@ -163,7 +168,7 @@ class _signupState extends State<signup> {
                                 hintStyle: TextStyle(color: Colors.grey)),
                           ),
                           SizedBox(
-                            height: 15.0,
+                            height: 10.0,
                           ),
                           TextField(
                             autofocus: true,
@@ -185,7 +190,7 @@ class _signupState extends State<signup> {
                                 hintStyle: TextStyle(color: Colors.grey)),
                           ),
                           SizedBox(
-                            height: 15.0,
+                            height: 5.0,
                           ),
                           Row(children: [
                             Checkbox(
@@ -199,29 +204,24 @@ class _signupState extends State<signup> {
                                 });
                               },
                             ),
-                            Text('Tôi đồng ý với '),
+                            Text('Tôi đồng ý với ',
+                                style: TextStyle(color: Colors.white)),
                             Text('Điều khoản ',
                                 style: TextStyle(color: Colors.red)),
-                            Text('& '),
+                            Text('& ', style: TextStyle(color: Colors.white)),
                             Text('Thể lệ ',
                                 style: TextStyle(color: Colors.red)),
-                            Text('chương trình '),
                           ]),
-                          SizedBox(
-                            height: 20.0,
-                          ),
                           MaterialButton(
                               height: 45.0,
                               elevation: 5,
                               minWidth: 180,
                               onPressed: () {
-                                //   Navigator.push(context,
-                                // MaterialPageRoute(
-
-                                //   builder: (context)=>
-                                //   const home()
-                                //   ),
-                                //   );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const home()),
+                                );
                               },
                               shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(30.0),
@@ -232,7 +232,7 @@ class _signupState extends State<signup> {
                                   .withOpacity(0.50),
                               disabledElevation: 0,
                               child: Text(
-                                'Sign up',
+                                'Đăng ký',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(color: Colors.white),
                               )),

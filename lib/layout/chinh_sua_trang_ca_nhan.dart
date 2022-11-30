@@ -1,8 +1,7 @@
-import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/doi_mat_khau.dart';
 import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
-
 import 'package:flutter/material.dart';
-import 'package:nhom_tinh_he/layout/change_pass.dart';
+import 'package:nhom_tinh_he/layout/doi_mat_khau.dart';
 import 'package:nhom_tinh_he/layout/doi_mk.dart';
 import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 
@@ -110,26 +109,26 @@ class _editState extends State<edit> {
                   ),
                 ),
                 Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10,
-                        ),
-                        child: MaterialButton(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const pro_file()),
-                            );
-                          },
-                          child: CircleAvatar(
-                              backgroundColor: Colors.white,
-                              radius: 16,
-                              child: Icon(
-                                Icons.arrow_back,
-                                color: Colors.black,
-                              )),
-                        ),
-                      ),
+                  padding: const EdgeInsets.only(
+                    top: 10,
+                  ),
+                  child: MaterialButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const pro_file()),
+                      );
+                    },
+                    child: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        radius: 16,
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: Colors.black,
+                        )),
+                  ),
+                ),
                 Container(
                   width: double.infinity,
                   padding: EdgeInsets.only(right: 15, top: 210),
@@ -143,21 +142,12 @@ class _editState extends State<edit> {
                               elevation: 5,
                               minWidth: 120,
                               onPressed: () {
-<<<<<<< HEAD
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
                                           const change_password()),
                                 );
-=======
-                                //     Navigator.push(context,
-                                // MaterialPageRoute(
-                                //   builder: (context)=>
-                                //   const MyApp()
-                                //   ),
-                                //   );
->>>>>>> Minh-Quang
                               },
                               shape: RoundedRectangleBorder(
                                 side: BorderSide(
@@ -209,7 +199,8 @@ class _editState extends State<edit> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 10,left: 25, bottom: 5),
+                          padding: const EdgeInsets.only(
+                              top: 10, left: 25, bottom: 5),
                           child: Text(
                             'Tiểu sử',
                             style: TextStyle(fontSize: 15, color: Colors.black),
@@ -256,7 +247,7 @@ class _editState extends State<edit> {
                         ),
                         Container(
                           width: double.infinity,
-                          padding: EdgeInsets.only(top:15,bottom: 15),
+                          padding: EdgeInsets.only(top: 15, bottom: 15),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -267,12 +258,12 @@ class _editState extends State<edit> {
                                       elevation: 5,
                                       minWidth: 300,
                                       onPressed: () {
-                                            Navigator.push(context,
-                                        MaterialPageRoute(
-                                          builder: (context)=>
-                                          const pro_file()
-                                          ),
-                                          );
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const pro_file()),
+                                        );
                                       },
                                       shape: RoundedRectangleBorder(
                                         side: BorderSide(
