@@ -11,6 +11,13 @@ class choidon extends StatefulWidget {
 }
 
 class _choidonState extends State<choidon> {
+  bool viewVisible = true;
+  void hideWidget() {
+    setState(() {
+      viewVisible = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,16 +103,15 @@ class _choidonState extends State<choidon> {
                   height: 10,
                 ),
                 Container(
-                  padding:
-                      EdgeInsets.only( top: 15, bottom: 15),
+                  padding: EdgeInsets.only(top: 15, bottom: 15),
                   child: Row(
                     children: [
                       Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             MaterialButton(
-                              onPressed: () {},
-                              minWidth:MediaQuery.of(context).size.width/6,
+                              onPressed: hideWidget,
+                              minWidth: MediaQuery.of(context).size.width / 6,
                               child: CircleAvatar(
                                 radius: 25,
                                 backgroundColor: Colors.white,
@@ -126,7 +132,7 @@ class _choidonState extends State<choidon> {
                           children: [
                             MaterialButton(
                               onPressed: () {},
-                              minWidth:MediaQuery.of(context).size.width/6,
+                              minWidth: MediaQuery.of(context).size.width / 6,
                               child: CircleAvatar(
                                 radius: 25,
                                 backgroundColor: Colors.white,
@@ -146,7 +152,7 @@ class _choidonState extends State<choidon> {
                           children: [
                             MaterialButton(
                               onPressed: () {},
-                              minWidth:MediaQuery.of(context).size.width/6,
+                              minWidth: MediaQuery.of(context).size.width / 6,
                               child: CircleAvatar(
                                 radius: 25,
                                 backgroundColor: Colors.white,
@@ -168,7 +174,7 @@ class _choidonState extends State<choidon> {
                           children: [
                             MaterialButton(
                               onPressed: () {},
-                              minWidth:MediaQuery.of(context).size.width/6,
+                              minWidth: MediaQuery.of(context).size.width / 6,
                               child: CircleAvatar(
                                 radius: 25,
                                 backgroundColor: Colors.white,
@@ -187,7 +193,7 @@ class _choidonState extends State<choidon> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             MaterialButton(
-                              minWidth:MediaQuery.of(context).size.width/6,
+                              minWidth: MediaQuery.of(context).size.width / 6,
                               onPressed: () {
                                 showDialog(
                                   context: context,
@@ -253,7 +259,7 @@ class _choidonState extends State<choidon> {
                       padding: const EdgeInsets.only(top: 15),
                       child: Center(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 5,right: 5),
+                          padding: const EdgeInsets.only(left: 5, right: 5),
                           child: Card(
                             color: Colors.blue,
                             shape: RoundedRectangleBorder(
@@ -343,29 +349,35 @@ class _choidonState extends State<choidon> {
                 SizedBox(
                   height: 15,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    MaterialButton(
-                      height: 60,
-                      elevation: 5,
-                      minWidth: 400,
-                      onPressed: () {},
-                      shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                          width: 2,
-                          color: Colors.blue,
+                Visibility(
+                  maintainSize: true,
+                  maintainAnimation: true,
+                  maintainState: true,
+                  visible: viewVisible,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      MaterialButton(
+                        height: 60,
+                        elevation: 5,
+                        minWidth: 400,
+                        onPressed: () {},
+                        shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                            width: 2,
+                            color: Colors.blue,
+                          ),
+                          borderRadius: new BorderRadius.circular(30.0),
                         ),
-                        borderRadius: new BorderRadius.circular(30.0),
+                        color: Colors.black,
+                        child: Text(
+                          'B. Lê Thị Mai',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white, fontSize: 26),
+                        ),
                       ),
-                      color: Colors.black,
-                      child: Text(
-                        'B. Lê Thị Mai',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white, fontSize: 26),
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 15,
@@ -397,29 +409,35 @@ class _choidonState extends State<choidon> {
                 SizedBox(
                   height: 15,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    MaterialButton(
-                      height: 60,
-                      elevation: 5,
-                      minWidth: 400,
-                      onPressed: () {},
-                      shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                          width: 2,
-                          color: Colors.blue,
+                Visibility(
+                  maintainSize: true,
+                  maintainAnimation: true,
+                  maintainState: true,
+                  visible: viewVisible,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      MaterialButton(
+                        height: 60,
+                        elevation: 5,
+                        minWidth: 400,
+                        onPressed: () {},
+                        shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                            width: 2,
+                            color: Colors.blue,
+                          ),
+                          borderRadius: new BorderRadius.circular(30.0),
                         ),
-                        borderRadius: new BorderRadius.circular(30.0),
+                        color: Colors.black,
+                        child: Text(
+                          'D. Lê Thị Lan',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white, fontSize: 26),
+                        ),
                       ),
-                      color: Colors.black,
-                      child: Text(
-                        'D. Lê Thị Lan',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white, fontSize: 26),
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),
