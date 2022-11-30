@@ -93,7 +93,7 @@ class _signinState extends State<signin> {
                       children: <Widget>[
                         Text('ĐĂNG NHẬP',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.white,
                               fontSize: 30,
                             )),
                         SizedBox(
@@ -194,7 +194,7 @@ class _signinState extends State<signin> {
                         SizedBox(
                           height: 10.0,
                         ),
-                        Text('Hoặc đăng nhập bằng'),
+                        Text('Hoặc đăng nhập bằng' , style: TextStyle(color: Colors.white)),
                         SizedBox(
                           height: 5.0,
                         ),
@@ -206,7 +206,7 @@ class _signinState extends State<signin> {
                                 child: ElevatedButton.icon(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
-                                    primary: Colors.white,
+                                    primary: Colors.black,
                                   ),
                                   icon: Icon(
                                     Icons.facebook,
@@ -222,7 +222,7 @@ class _signinState extends State<signin> {
                                 child: ElevatedButton.icon(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
-                                    primary: Colors.white,
+                                    primary: Colors.black,
                                   ),
                                   icon: Icon(
                                     Icons.mail,
@@ -243,7 +243,7 @@ class _signinState extends State<signin> {
                         Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('Chưa có tài khoản?'),
+                              Text('Chưa có tài khoản?', style: TextStyle(color: Colors.white)),
                               TextButton(
                                 onPressed: () {
                                   Navigator.push(

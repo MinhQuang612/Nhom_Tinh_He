@@ -16,6 +16,7 @@ class _result_challengeState extends State<result_challenge> {
   Widget build(BuildContext context) {
      return Scaffold(
       appBar: AppBar(
+         automaticallyImplyLeading: false,
         centerTitle: true,
         title: Text('Kết quả'),
         backgroundColor: Colors.grey.shade600,

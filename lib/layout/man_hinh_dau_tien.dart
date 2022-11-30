@@ -65,7 +65,7 @@ class _first_screenState extends State<first_screen> {
                           Theme.of(context).primaryColor.withOpacity(0.50),
                       disabledElevation: 0,
                       child: Text(
-                        'Sign in',
+                        'Đăng nhập',
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       )),
                   SizedBox(
@@ -79,7 +79,7 @@ class _first_screenState extends State<first_screen> {
                       indent: 15.0,
                       endIndent: 15.0,
                     )),
-                    Text("OR"),
+                    Text("Hoặc",style: TextStyle(color: Colors.white),),
                     Expanded(
                         child: Divider(
                       thickness: 1.5,
@@ -110,7 +110,7 @@ class _first_screenState extends State<first_screen> {
                           Theme.of(context).primaryColor.withOpacity(0.50),
                       disabledElevation: 0,
                       child: Text(
-                        'Sign up',
+                        'Đăng ký',
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       )),
                 ]),

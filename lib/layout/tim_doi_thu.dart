@@ -55,7 +55,7 @@ class _challengeState extends State<challenge> {
         body: TabBarView(
           children: <Widget>[
             Material(
-              color: Colors.grey.shade800,
+              color: Colors.black,
               child: ListView(
                 children: [
                   Container(
@@ -429,7 +429,7 @@ class _challengeState extends State<challenge> {
               ),
             ),
             Material(
-              color: Colors.grey.shade700,
+              color: Colors.black,
               child: ListView(
                 children: [
                   Container(
@@ -803,7 +803,7 @@ class _challengeState extends State<challenge> {
             ),
             Material(
               child: Container(
-                color: Colors.grey.shade700,
+                color: Colors.black,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -845,7 +845,7 @@ class _challengeState extends State<challenge> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          primary: Colors.black,
+                          primary: Colors.white,
                         ),
                         icon: Icon(
                           Icons.facebook,

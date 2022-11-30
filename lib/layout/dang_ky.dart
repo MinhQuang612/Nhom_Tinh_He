@@ -98,7 +98,7 @@ Color getColor(Set<MaterialState> states) {
                         child: Column(children: <Widget>[
                           Text('ĐĂNG KÝ',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 30,
                               )),
                           SizedBox(
@@ -204,10 +204,10 @@ Color getColor(Set<MaterialState> states) {
                                 });
                               },
                             ),
-                            Text('Tôi đồng ý với '),
+                            Text('Tôi đồng ý với ', style: TextStyle(color: Colors.white)),
                             Text('Điều khoản ',
                                 style: TextStyle(color: Colors.red)),
-                            Text('& '),
+                            Text('& ', style: TextStyle(color: Colors.white)),
                             Text('Thể lệ ',
                                 style: TextStyle(color: Colors.red)),
 

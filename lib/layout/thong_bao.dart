@@ -31,7 +31,7 @@ class _thong_baoState extends State<thong_bao> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: Colors.grey.shade800,
+        color: Colors.black,
         padding: EdgeInsets.all(20),
         child: SingleChildScrollView(
           child: Column(

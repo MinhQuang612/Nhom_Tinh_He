@@ -17,6 +17,7 @@ class _result_soloState extends State<result_solo> {
       length: 5,
       child: Scaffold(
         appBar: AppBar(
+           automaticallyImplyLeading: false,
           centerTitle: true,
           title: Text('Kết quả'),
           backgroundColor: Colors.grey.shade600,

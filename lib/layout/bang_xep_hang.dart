@@ -31,15 +31,14 @@ class _bxhState extends State<bxh> {
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            colors: [
-              Colors.blue,
-              Colors.white,
-            ],
+            gradient: LinearGradient(
+              end: Alignment.bottomLeft,
+              colors: [
+                Color.fromARGB(255, 202, 207, 241),
+                Color.fromARGB(255, 15, 36, 152),
+              ],
+            ),
           ),
-        ),
         child: SingleChildScrollView(
           child: Column(
             children: [

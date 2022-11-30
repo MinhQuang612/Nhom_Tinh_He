@@ -1,4 +1,5 @@
 import 'package:nhom_tinh_he/layout/bang_xep_hang.dart';
+import 'package:nhom_tinh_he/layout/man_hinh_dau_tien.dart';
 import 'package:nhom_tinh_he/layout/thong_bao.dart';
 import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 import '../layout/tim_doi_thu.dart';
@@ -242,7 +243,7 @@ class _MenuState extends State<Menu> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      const home()),
+                                                      const first_screen()),
                                             );
                                           },
                                           child: const Text('Có'),
