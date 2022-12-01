@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/chinh_sua_trang_ca_nhan.dart';
 import 'package:nhom_tinh_he/layout/home.dart';
+import 'package:nhom_tinh_he/layout/lich_su_dau.dart';
 import 'package:nhom_tinh_he/layout/thanh_tich.dart';
 import 'package:nhom_tinh_he/layout/thong_ke.dart';
 
@@ -191,7 +192,7 @@ class _pro_fileState extends State<pro_file> {
                     children: [
                       achievements(),
                       thongke(),
-                      //lich_su_dau(),
+                      lich_su_dau(),
                     ],
                   ),
                 ),
