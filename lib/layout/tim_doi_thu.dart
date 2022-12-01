@@ -845,7 +845,7 @@ class _challengeState extends State<challenge> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          primary: Colors.white,
+                          primary: Color.fromARGB(255, 236, 227, 227),
                         ),
                         icon: Icon(
                           Icons.facebook,

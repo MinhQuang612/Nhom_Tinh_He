@@ -1,10 +1,6 @@
-
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/home.dart';
 import 'package:nhom_tinh_he/layout/man_hinh_dau_tien.dart';
-
 
 class signup extends StatefulWidget {
   const signup({Key? key}) : super(key: key);
@@ -14,26 +10,31 @@ class signup extends StatefulWidget {
 }
 
 class _signupState extends State<signup> {
+  bool hide_pass = true;
+  bool _hide_pass = true;
+
   BoxDecoration myBoxDecoration() {
-  return BoxDecoration(
-    border: Border.all(
-      color: Colors.black,
-      width: 1, //               
-    ),
-  );
+    return BoxDecoration(
+      border: Border.all(
+        color: Colors.black,
+        width: 1, //
+      ),
+    );
   }
+
   bool isChecked = true;
-Color getColor(Set<MaterialState> states) {
-            const Set<MaterialState> interactiveStates= <MaterialState>{
-              MaterialState.pressed,
-              MaterialState.hovered,
-              MaterialState.focused,
-            };
-            if(states.any(interactiveStates.contains)) {
-              return Colors.black;
-            }
-            return Colors.black;
-          }
+  Color getColor(Set<MaterialState> states) {
+    const Set<MaterialState> interactiveStates = <MaterialState>{
+      MaterialState.pressed,
+      MaterialState.hovered,
+      MaterialState.focused,
+    };
+    if (states.any(interactiveStates.contains)) {
+      return Colors.black;
+    }
+    return Colors.black;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +45,7 @@ Color getColor(Set<MaterialState> states) {
               gradient: LinearGradient(
                 end: Alignment.bottomLeft,
                 colors: [
-                Color.fromARGB(255, 202, 207, 241),
+                  Color.fromARGB(255, 202, 207, 241),
                   Color.fromARGB(255, 15, 36, 152),
                 ],
               ),
@@ -106,8 +107,10 @@ Color getColor(Set<MaterialState> states) {
                           ),
                           TextField(
                             autofocus: true,
+                            controller: _nameController,
                             style: TextStyle(color: Colors.black),
                             decoration: InputDecoration(
+                                errorText: _nameInvalid ? _nameErr : null,
                                 enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   borderSide:
@@ -121,15 +124,16 @@ Color getColor(Set<MaterialState> states) {
                                 prefixIcon:
                                     Icon(Icons.person, color: Colors.black),
                                 hintText: 'Nhập username',
-                                hintStyle: TextStyle(color: Colors.grey)),
+                                hintStyle: TextStyle(color: Colors.white)),
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           TextField(
-                            autofocus: true,
+                            controller: _userController,
                             style: TextStyle(color: Colors.black),
                             decoration: InputDecoration(
+                                errorText: _userInvalid ? _userErr : null,
                                 enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   borderSide:
@@ -143,15 +147,28 @@ Color getColor(Set<MaterialState> states) {
                                 prefixIcon:
                                     Icon(Icons.mail, color: Colors.black),
                                 hintText: 'Nhập email',
-                                hintStyle: TextStyle(color: Colors.grey)),
+                                hintStyle: TextStyle(color: Colors.white)),
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           TextField(
-                            autofocus: true,
+                            obscureText: hide_pass,
+                            controller: _passwordController,
                             style: TextStyle(color: Colors.black),
                             decoration: InputDecoration(
+                                errorText: _passInvalid ? _passErr : null,
+                                suffixIcon: IconButton(
+                                    icon: Icon(
+                                        hide_pass
+                                            ? Icons.visibility
+                                            : Icons.visibility_off,
+                                        color: Colors.black),
+                                    onPressed: () {
+                                      setState(() {
+                                        hide_pass = !hide_pass;
+                                      });
+                                    }),
                                 enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   borderSide:
@@ -165,15 +182,28 @@ Color getColor(Set<MaterialState> states) {
                                 prefixIcon:
                                     Icon(Icons.lock, color: Colors.black),
                                 hintText: 'Nhập mật khẩu',
-                                hintStyle: TextStyle(color: Colors.grey)),
+                                hintStyle: TextStyle(color: Colors.white)),
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           TextField(
-                            autofocus: true,
+                            obscureText: _hide_pass,
+                            controller: _passwordController,
                             style: TextStyle(color: Colors.black),
                             decoration: InputDecoration(
+                                errorText: _passInvalid ? _passErr : null,
+                                suffixIcon: IconButton(
+                                    icon: Icon(
+                                        _hide_pass
+                                            ? Icons.visibility
+                                            : Icons.visibility_off,
+                                        color: Colors.black),
+                                    onPressed: () {
+                                      setState(() {
+                                        _hide_pass = !_hide_pass;
+                                      });
+                                    }),
                                 enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   borderSide:
@@ -187,7 +217,7 @@ Color getColor(Set<MaterialState> states) {
                                 prefixIcon:
                                     Icon(Icons.lock, color: Colors.black),
                                 hintText: 'Xác nhận mật khẩu',
-                                hintStyle: TextStyle(color: Colors.grey)),
+                                hintStyle: TextStyle(color: Colors.white)),
                           ),
                           SizedBox(
                             height: 5.0,
@@ -204,25 +234,20 @@ Color getColor(Set<MaterialState> states) {
                                 });
                               },
                             ),
-                            Text('Tôi đồng ý với ', style: TextStyle(color: Colors.white)),
+                            Text('Tôi đồng ý với ',
+                                style: TextStyle(color: Colors.white)),
                             Text('Điều khoản ',
                                 style: TextStyle(color: Colors.red)),
                             Text('& ', style: TextStyle(color: Colors.white)),
                             Text('Thể lệ ',
                                 style: TextStyle(color: Colors.red)),
-
                           ]),
-
                           MaterialButton(
                               height: 45.0,
                               elevation: 5,
                               minWidth: 180,
                               onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const home()),
-                                );
+                                onSigninClick();
                               },
                               shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(30.0),
@@ -244,5 +269,44 @@ Color getColor(Set<MaterialState> states) {
                 ))),
       ),
     );
+  }
+
+  TextEditingController _nameController = new TextEditingController();
+  TextEditingController _userController = new TextEditingController();
+  TextEditingController _passwordController = new TextEditingController();
+
+  var _nameErr = "Vui lòng nhập username";
+  var _userErr = "Tài khoản không hơp lệ";
+  var _passErr = "Mật khẩu phải nhiều hơn 6 ký tự";
+
+  var _nameInvalid = false;
+  var _userInvalid = false;
+  var _passInvalid = false;
+
+  void onSigninClick() {
+    setState(() {
+      if (_nameController.text.length < 6) {
+        _nameInvalid = true;
+      } else {
+        _nameInvalid = false;
+      }
+      if (_userController.text.length < 6 ||
+          !_userController.text.contains("@")) {
+        _userInvalid = true;
+      } else {
+        _userInvalid = false;
+      }
+      if (_passwordController.text.length < 6) {
+        _passInvalid = true;
+      } else {
+        _passInvalid = false;
+      }
+      if (!_userInvalid && !_passInvalid) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const home()),
+        );
+      }
+    });
   }
 }

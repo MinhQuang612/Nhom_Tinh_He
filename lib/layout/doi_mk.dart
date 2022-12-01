@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nhom_tinh_he/layout/chinh_sua_trang_ca_nhan.dart';
+
 import 'package:nhom_tinh_he/layout/dang_nhap.dart';
+import 'package:nhom_tinh_he/layout/quen_mk.dart';
 
 class newpass extends StatefulWidget {
   const newpass({Key? key}) : super(key: key);
@@ -50,7 +51,7 @@ class _newpassState extends State<newpass> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: ((context) => const edit())));
+                                builder: ((context) => const forget_pass())));
                       },
                       child: const Text('X'),
                     ),

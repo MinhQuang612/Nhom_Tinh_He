@@ -83,7 +83,7 @@ class _thong_baoState extends State<thong_bao> {
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 16.0,
-                          backgroundColor: Colors.grey.shade800,
+                          backgroundColor: Colors.black,
                           child: const Text(
                             '30',
                             style: TextStyle(
@@ -198,7 +198,7 @@ class _thong_baoState extends State<thong_bao> {
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 16.0,
-                          backgroundColor: Colors.grey.shade800,
+                          backgroundColor: Colors.black,
                           child: const Text(
                             '30',
                             style: TextStyle(

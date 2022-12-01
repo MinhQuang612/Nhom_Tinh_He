@@ -12,12 +12,16 @@ class choidon extends StatefulWidget {
 
 class _choidonState extends State<choidon> {
   bool viewVisible = true;
+  bool isButtonActive =true;
   void hideWidget() {
     setState(() {
       viewVisible = false;
+      isButtonActive =false;
     });
-  }
 
+   
+    
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -111,6 +115,13 @@ class _choidonState extends State<choidon> {
                           children: [
                             MaterialButton(
                               onPressed: hideWidget,
+                             
+                              //  onPressed: isButtonActive 
+                              // ? () {
+                              //   setState(() =>isButtonActive =false,
+                              //   );
+                              // } :null,       // disable button after firts click
+                             
                               minWidth: MediaQuery.of(context).size.width / 6,
                               child: CircleAvatar(
                                 radius: 25,
