@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nhom_tinh_he/layout/choidon.dart';
 import 'package:nhom_tinh_he/layout/man_hinh_dau_tien.dart';
+import 'package:nhom_tinh_he/layout/trang_ca_nhan.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: first_screen(),
+      home: pro_file(),
     );
   }
 }

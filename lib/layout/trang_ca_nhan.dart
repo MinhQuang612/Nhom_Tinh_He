@@ -191,14 +191,7 @@ class _pro_fileState extends State<pro_file> {
                     children: [
                       achievements(),
                       thongke(),
-                      Container(
-                        color: Colors.green,
-                        child: Center(
-                          child: Text(
-                            'Car',
-                          ),
-                        ),
-                      ),
+                      //lich_su_dau(),
                     ],
                   ),
                 ),
